@@ -2,6 +2,10 @@
 import os
 import sqlite3
 import sys
+from dotenv import load_dotenv
+
+# Load environment variables from .env
+load_dotenv()
 
 DB_PATH = 'data/prayers.db'
 SCHEMA_PATH = 'schema.sql'
@@ -202,15 +206,109 @@ if __name__ == '__main__':
 
     conn.commit()
 
-    # 6. Riepilogo
+    # 6. Fetch gospel and saints for entire year 2026
+    print("\nFetching gospel readings for 2026...")
+    from fetch_gospel import fetch_gospel_day
+    from fetch_saints import fetch_saint_day
+    from datetime import datetime, timedelta
+    import json
+
+    start_date = datetime.strptime('2026-01-01', '%Y-%m-%d')
+    end_date = datetime.strptime('2026-12-31', '%Y-%m-%d')
+    
+    current_date = start_date
+    fetched_gospels = 0
+    fetched_saints = 0
+    
+    while current_date <= end_date:
+        date_str = current_date.strftime('%Y-%m-%d')
+        
+        # Fetch gospel
+        gospel_result = fetch_gospel_day(date_str)
+        if gospel_result:
+            fetched_gospels += 1
+            if fetched_gospels % 50 == 0:
+                print(f"  Fetched {fetched_gospels} gospels...")
+        
+        # Fetch saint
+        saint_result = fetch_saint_day(date_str)
+        if saint_result:
+            fetched_saints += 1
+            if fetched_saints % 50 == 0:
+                print(f"  Fetched {fetched_saints} saints...")
+        
+        current_date += timedelta(days=1)
+    
+    print(f"Fetched {fetched_gospels} gospels and {fetched_saints} saints")
+    
+    # 7. Insert gospel and saint data from raw files
+    print("\nInserting gospel data into database...")
+    gospel_dir = 'data/raw/gospel'
+    if os.path.exists(gospel_dir):
+        gospel_files = sorted([f for f in os.listdir(gospel_dir) if f.endswith('.json')])
+        gospel_rows = []
+        for filename in gospel_files:
+            filepath = os.path.join(gospel_dir, filename)
+            with open(filepath, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            date_str = data.get('date')
+            for lang in ['it', 'en', 'es', 'pt']:
+                gospel_text_key = f'gospel_text_{lang}'
+                reading_1_text_key = f'reading_1_text_{lang}'
+                gospel_text = data.get(gospel_text_key, '')
+                reading_1_text = data.get(reading_1_text_key, '')
+                season = data.get('season', '')
+                
+                gospel_rows.append((date_str, lang, season, gospel_text, reading_1_text, None))
+        
+        cursor.executemany(
+            'INSERT INTO gospel (date, lang, season, gospel_text, reading_1_text, audio_tts_hint) VALUES (?, ?, ?, ?, ?, ?)',
+            gospel_rows
+        )
+    
+    print("Inserting saint data into database...")
+    saint_dir = 'data/raw/saints'
+    if os.path.exists(saint_dir):
+        saint_files = sorted([f for f in os.listdir(saint_dir) if f.endswith('.json')])
+        saint_rows = []
+        for filename in saint_files:
+            filepath = os.path.join(saint_dir, filename)
+            with open(filepath, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            date_str = data.get('date')
+            for lang in ['it', 'en', 'es', 'pt']:
+                name_key = f'name_{lang}'
+                bio_key = f'bio_{lang}'
+                name = data.get(name_key, '')
+                bio = data.get(bio_key, '')
+                
+                saint_rows.append((date_str, lang, name, bio, None))
+        
+        cursor.executemany(
+            'INSERT INTO saint (date, lang, name, biography, audio_tts_hint) VALUES (?, ?, ?, ?, ?)',
+            saint_rows
+        )
+    
+    conn.commit()
+
+    # 8. Final summary
     cursor.execute('SELECT COUNT(*) FROM prayer')
     prayer_count = cursor.fetchone()[0]
     cursor.execute('SELECT COUNT(*) FROM rosary_mystery')
     mystery_count = cursor.fetchone()[0]
+    cursor.execute('SELECT COUNT(*) FROM gospel')
+    gospel_count = cursor.fetchone()[0]
+    cursor.execute('SELECT COUNT(*) FROM saint')
+    saint_count = cursor.fetchone()[0]
 
-    print('DB creato in', DB_PATH)
-    print('Rig...')
+    print('\n=== Database Summary ===')
+    print(f'DB creato in {DB_PATH}')
     print(f' - prayer: {prayer_count} righe')
     print(f' - rosary_mystery: {mystery_count} righe')
+    print(f' - gospel: {gospel_count} righe')
+    print(f' - saint: {saint_count} righe')
+    print('======================')
 
     conn.close()
