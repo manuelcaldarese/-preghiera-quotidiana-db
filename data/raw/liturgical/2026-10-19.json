@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-19",
+  "season": "ordinary",
+  "season_week": 29,
+  "celebrations": [
+    {
+      "title": "Monday, 29th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saints Jean de Brébeuf, Isaac Jogues, priests and martyrs; and their companions, martyrs",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    },
+    {
+      "title": "Saint Paul of the Cross, priest",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "monday"
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-21",
+  "season": "ordinary",
+  "season_week": 16,
+  "celebrations": [
+    {
+      "title": "Tuesday, 16th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Lawrence of Brindisi, priest and doctor",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "tuesday"
+}

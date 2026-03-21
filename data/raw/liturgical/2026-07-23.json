@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-23",
+  "season": "ordinary",
+  "season_week": 16,
+  "celebrations": [
+    {
+      "title": "Thursday, 16th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Birgitta, religious",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "thursday"
+}

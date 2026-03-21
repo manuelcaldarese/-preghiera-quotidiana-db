@@ -1,0 +1,14 @@
+{
+  "date": "2026-01-01",
+  "season": "christmas",
+  "season_week": 1,
+  "celebrations": [
+    {
+      "title": "Mary, Mother of God (Octave of Christmas)",
+      "colour": "white",
+      "rank": "solemnity",
+      "rank_num": 1.3
+    }
+  ],
+  "weekday": "thursday"
+}

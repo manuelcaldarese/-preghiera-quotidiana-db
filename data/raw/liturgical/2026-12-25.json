@@ -1,0 +1,14 @@
+{
+  "date": "2026-12-25",
+  "season": "christmas",
+  "season_week": 0,
+  "celebrations": [
+    {
+      "title": "Christmas",
+      "colour": "white",
+      "rank": "Primary liturgical days",
+      "rank_num": 1.2
+    }
+  ],
+  "weekday": "friday"
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-05-03",
+  "season": "easter",
+  "season_week": 5,
+  "celebrations": [
+    {
+      "title": "5th Sunday of Easter",
+      "colour": "white",
+      "rank": "Primary liturgical days",
+      "rank_num": 1.2
+    }
+  ],
+  "weekday": "sunday"
+}

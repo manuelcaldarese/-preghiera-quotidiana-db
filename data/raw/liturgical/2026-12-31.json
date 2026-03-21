@@ -1,0 +1,20 @@
+{
+  "date": "2026-12-31",
+  "season": "christmas",
+  "season_week": 1,
+  "celebrations": [
+    {
+      "title": "7th day of Christmas Octave",
+      "colour": "white",
+      "rank": "ferial",
+      "rank_num": 2.9
+    },
+    {
+      "title": "Saint Sylvester I, pope",
+      "colour": "white",
+      "rank": "commemoration",
+      "rank_num": 4.0
+    }
+  ],
+  "weekday": "thursday"
+}

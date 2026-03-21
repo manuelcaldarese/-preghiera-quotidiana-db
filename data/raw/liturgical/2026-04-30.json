@@ -1,0 +1,20 @@
+{
+  "date": "2026-04-30",
+  "season": "easter",
+  "season_week": 4,
+  "celebrations": [
+    {
+      "title": "Thursday, 4th week of Easter",
+      "colour": "white",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Pius V, pope",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "thursday"
+}

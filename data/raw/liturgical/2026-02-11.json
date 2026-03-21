@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-11",
+  "season": "ordinary",
+  "season_week": 5,
+  "celebrations": [
+    {
+      "title": "Wednesday, 5th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Our Lady of Lourdes",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "wednesday"
+}

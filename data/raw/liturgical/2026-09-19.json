@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-19",
+  "season": "ordinary",
+  "season_week": 24,
+  "celebrations": [
+    {
+      "title": "Saturday, 24th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Januarius, bishop and martyr",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    },
+    {
+      "title": "The Memorial of the Blessed Virgin Mary on Saturday",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "saturday"
+}

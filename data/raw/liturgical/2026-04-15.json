@@ -1,0 +1,14 @@
+{
+  "date": "2026-04-15",
+  "season": "easter",
+  "season_week": 2,
+  "celebrations": [
+    {
+      "title": "Wednesday, 2nd week of Easter",
+      "colour": "white",
+      "rank": "ferial",
+      "rank_num": 3.13
+    }
+  ],
+  "weekday": "wednesday"
+}

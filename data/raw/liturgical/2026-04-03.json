@@ -1,0 +1,14 @@
+{
+  "date": "2026-04-03",
+  "season": "lent",
+  "season_week": 6,
+  "celebrations": [
+    {
+      "title": "Good Friday",
+      "colour": "red",
+      "rank": "Easter triduum",
+      "rank_num": 1.1
+    }
+  ],
+  "weekday": "friday"
+}

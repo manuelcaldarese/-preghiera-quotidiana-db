@@ -1,0 +1,14 @@
+{
+  "date": "2026-03-22",
+  "season": "lent",
+  "season_week": 5,
+  "celebrations": [
+    {
+      "title": "5th Sunday of Lent",
+      "colour": "violet",
+      "rank": "Primary liturgical days",
+      "rank_num": 1.2
+    }
+  ],
+  "weekday": "sunday"
+}

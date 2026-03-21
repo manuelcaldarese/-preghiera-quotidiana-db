@@ -1,0 +1,26 @@
+{
+  "date": "2026-08-07",
+  "season": "ordinary",
+  "season_week": 18,
+  "celebrations": [
+    {
+      "title": "Friday, 18th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Sixtus II, pope, and companions, martyrs",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    },
+    {
+      "title": "Saint Cajetan, priest",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "friday"
+}

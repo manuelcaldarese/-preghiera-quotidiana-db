@@ -1,0 +1,14 @@
+{
+  "date": "2026-04-09",
+  "season": "easter",
+  "season_week": 1,
+  "celebrations": [
+    {
+      "title": "Easter Thursday",
+      "colour": "white",
+      "rank": "Primary liturgical days",
+      "rank_num": 1.2
+    }
+  ],
+  "weekday": "thursday"
+}

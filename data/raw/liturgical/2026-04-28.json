@@ -1,0 +1,26 @@
+{
+  "date": "2026-04-28",
+  "season": "easter",
+  "season_week": 4,
+  "celebrations": [
+    {
+      "title": "Tuesday, 4th week of Easter",
+      "colour": "white",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Peter Chanel, priest and martyr",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    },
+    {
+      "title": "Saint Louis Grignon de Montfort, priest",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "tuesday"
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-01-15",
+  "season": "ordinary",
+  "season_week": 1,
+  "celebrations": [
+    {
+      "title": "Thursday, 1st week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    }
+  ],
+  "weekday": "thursday"
+}

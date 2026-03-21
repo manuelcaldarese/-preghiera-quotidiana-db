@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-14",
+  "season": "ordinary",
+  "season_week": 15,
+  "celebrations": [
+    {
+      "title": "Tuesday, 15th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Camillus de Lellis, priest",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "tuesday"
+}

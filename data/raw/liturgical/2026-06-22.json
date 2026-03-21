@@ -1,0 +1,26 @@
+{
+  "date": "2026-06-22",
+  "season": "ordinary",
+  "season_week": 12,
+  "celebrations": [
+    {
+      "title": "Monday, 12th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Paulinus of Nola, bishop",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    },
+    {
+      "title": "Saints John Fisher, bishop and martyr and Thomas More, martyr",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "monday"
+}

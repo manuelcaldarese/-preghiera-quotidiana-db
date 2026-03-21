@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-01",
+  "season": "easter",
+  "season_week": 4,
+  "celebrations": [
+    {
+      "title": "Friday, 4th week of Easter",
+      "colour": "white",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Joseph the Worker",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "friday"
+}

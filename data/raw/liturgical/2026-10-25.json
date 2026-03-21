@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-25",
+  "season": "ordinary",
+  "season_week": 30,
+  "celebrations": [
+    {
+      "title": "30th Sunday in Ordinary Time",
+      "colour": "green",
+      "rank": "Sunday",
+      "rank_num": 2.6
+    }
+  ],
+  "weekday": "sunday"
+}

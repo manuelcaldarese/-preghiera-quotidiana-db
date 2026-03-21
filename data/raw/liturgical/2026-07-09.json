@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-09",
+  "season": "ordinary",
+  "season_week": 14,
+  "celebrations": [
+    {
+      "title": "Thursday, 14th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Augustine Zhao Rong and companions, martyrs",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "thursday"
+}

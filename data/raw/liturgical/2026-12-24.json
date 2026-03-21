@@ -1,0 +1,14 @@
+{
+  "date": "2026-12-24",
+  "season": "advent",
+  "season_week": 4,
+  "celebrations": [
+    {
+      "title": "24th December",
+      "colour": "violet",
+      "rank": "ferial",
+      "rank_num": 2.9
+    }
+  ],
+  "weekday": "thursday"
+}

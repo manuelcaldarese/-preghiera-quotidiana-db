@@ -1,0 +1,14 @@
+{
+  "date": "2026-04-05",
+  "season": "easter",
+  "season_week": 1,
+  "celebrations": [
+    {
+      "title": "Easter Sunday",
+      "colour": "white",
+      "rank": "Easter triduum",
+      "rank_num": 1.1
+    }
+  ],
+  "weekday": "sunday"
+}

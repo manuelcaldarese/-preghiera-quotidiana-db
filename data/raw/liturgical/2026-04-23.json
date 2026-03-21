@@ -1,0 +1,26 @@
+{
+  "date": "2026-04-23",
+  "season": "easter",
+  "season_week": 3,
+  "celebrations": [
+    {
+      "title": "Thursday, 3rd week of Easter",
+      "colour": "white",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint George, martyr",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    },
+    {
+      "title": "Saint Adalbert, bishop and martyr",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "thursday"
+}

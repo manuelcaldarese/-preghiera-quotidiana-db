@@ -1,0 +1,20 @@
+{
+  "date": "2026-04-21",
+  "season": "easter",
+  "season_week": 3,
+  "celebrations": [
+    {
+      "title": "Tuesday, 3rd week of Easter",
+      "colour": "white",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Anselm of Canterbury, bishop and doctor of the Church",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "tuesday"
+}

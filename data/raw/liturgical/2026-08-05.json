@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-05",
+  "season": "ordinary",
+  "season_week": 18,
+  "celebrations": [
+    {
+      "title": "Wednesday, 18th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Dedication of the Basilica of Saint Mary Major",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "wednesday"
+}

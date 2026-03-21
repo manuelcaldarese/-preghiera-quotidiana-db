@@ -1,0 +1,14 @@
+{
+  "date": "2026-03-14",
+  "season": "lent",
+  "season_week": 3,
+  "celebrations": [
+    {
+      "title": "Saturday, 3rd week of Lent",
+      "colour": "violet",
+      "rank": "ferial",
+      "rank_num": 2.9
+    }
+  ],
+  "weekday": "saturday"
+}

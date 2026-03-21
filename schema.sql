@@ -92,7 +92,30 @@ CREATE TABLE novena (
     scripture_ref TEXT
 );
 
+CREATE TABLE feast_calendar (
+    id INTEGER PRIMARY KEY,
+    month INTEGER NOT NULL,
+    day INTEGER NOT NULL,
+    saint_name TEXT NOT NULL,
+    names_it TEXT,
+    names_en TEXT,
+    names_es TEXT,
+    names_pt TEXT,
+    feast_rank TEXT
+);
+
+CREATE TABLE saint_greeting (
+    id INTEGER PRIMARY KEY,
+    saint_name TEXT NOT NULL,
+    lang TEXT NOT NULL,
+    greeting_short TEXT NOT NULL,
+    greeting_long TEXT,
+    fun_fact TEXT
+);
+
 CREATE INDEX idx_gospel_date_lang ON gospel(date, lang);
 CREATE INDEX idx_saint_date_lang ON saint(date, lang);
 CREATE INDEX idx_liturgy_date_lang_office ON liturgy_proper(date, lang, office);
 CREATE INDEX idx_prayer_key_lang ON prayer(key, lang);
+CREATE INDEX idx_feast_calendar_month_day ON feast_calendar(month, day);
+CREATE INDEX idx_saint_greeting_name_lang ON saint_greeting(saint_name, lang);

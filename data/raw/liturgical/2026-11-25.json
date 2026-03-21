@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-25",
+  "season": "ordinary",
+  "season_week": 34,
+  "celebrations": [
+    {
+      "title": "Wednesday, 34th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Catherine of Alexandria",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "wednesday"
+}

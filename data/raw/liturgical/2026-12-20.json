@@ -1,0 +1,14 @@
+{
+  "date": "2026-12-20",
+  "season": "advent",
+  "season_week": 4,
+  "celebrations": [
+    {
+      "title": "4th Sunday of Advent",
+      "colour": "violet",
+      "rank": "Primary liturgical days",
+      "rank_num": 1.2
+    }
+  ],
+  "weekday": "sunday"
+}

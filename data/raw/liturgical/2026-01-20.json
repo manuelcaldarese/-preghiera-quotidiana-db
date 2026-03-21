@@ -1,0 +1,26 @@
+{
+  "date": "2026-01-20",
+  "season": "ordinary",
+  "season_week": 2,
+  "celebrations": [
+    {
+      "title": "Tuesday, 2nd week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Fabian, pope and martyr",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    },
+    {
+      "title": "Saint Sebastian, martyr",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "tuesday"
+}

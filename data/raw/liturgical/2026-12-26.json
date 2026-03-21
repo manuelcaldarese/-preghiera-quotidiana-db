@@ -1,0 +1,14 @@
+{
+  "date": "2026-12-26",
+  "season": "christmas",
+  "season_week": 0,
+  "celebrations": [
+    {
+      "title": "Saint Stephen, the first martyr",
+      "colour": "red",
+      "rank": "feast",
+      "rank_num": 2.7
+    }
+  ],
+  "weekday": "saturday"
+}

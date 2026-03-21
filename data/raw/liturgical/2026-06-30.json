@@ -1,0 +1,20 @@
+{
+  "date": "2026-06-30",
+  "season": "ordinary",
+  "season_week": 13,
+  "celebrations": [
+    {
+      "title": "Tuesday, 13th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "First Martyrs of the Church of Rome",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "tuesday"
+}

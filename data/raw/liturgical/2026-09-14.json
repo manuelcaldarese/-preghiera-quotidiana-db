@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-14",
+  "season": "ordinary",
+  "season_week": 24,
+  "celebrations": [
+    {
+      "title": "Triumph of the Holy Cross",
+      "colour": "red",
+      "rank": "feast",
+      "rank_num": 2.5
+    }
+  ],
+  "weekday": "monday"
+}

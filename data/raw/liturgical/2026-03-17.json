@@ -1,0 +1,20 @@
+{
+  "date": "2026-03-17",
+  "season": "lent",
+  "season_week": 4,
+  "celebrations": [
+    {
+      "title": "Tuesday, 4th week of Lent",
+      "colour": "violet",
+      "rank": "ferial",
+      "rank_num": 2.9
+    },
+    {
+      "title": "Saint Patrick, bishop",
+      "colour": "violet",
+      "rank": "commemoration",
+      "rank_num": 4.0
+    }
+  ],
+  "weekday": "tuesday"
+}

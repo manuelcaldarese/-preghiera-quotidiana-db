@@ -1,0 +1,20 @@
+{
+  "date": "2026-12-12",
+  "season": "advent",
+  "season_week": 2,
+  "celebrations": [
+    {
+      "title": "Saturday, 2nd week of Advent",
+      "colour": "violet",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Our Lady of Guadalupe",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "saturday"
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-12-30",
+  "season": "christmas",
+  "season_week": 1,
+  "celebrations": [
+    {
+      "title": "6th day of Christmas Octave",
+      "colour": "white",
+      "rank": "ferial",
+      "rank_num": 2.9
+    }
+  ],
+  "weekday": "wednesday"
+}

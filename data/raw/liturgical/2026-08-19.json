@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-19",
+  "season": "ordinary",
+  "season_week": 20,
+  "celebrations": [
+    {
+      "title": "Wednesday, 20th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint John Eudes, priest",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "wednesday"
+}

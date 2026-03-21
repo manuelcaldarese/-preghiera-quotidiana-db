@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-28",
+  "season": "ordinary",
+  "season_week": 26,
+  "celebrations": [
+    {
+      "title": "Monday, 26th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Wenceslaus, martyr",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    },
+    {
+      "title": "Saints Lawrence Ruiz and companions, martyrs",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "monday"
+}

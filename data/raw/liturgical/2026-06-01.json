@@ -1,0 +1,14 @@
+{
+  "date": "2026-06-01",
+  "season": "ordinary",
+  "season_week": 9,
+  "celebrations": [
+    {
+      "title": "Saint Justin Martyr",
+      "colour": "red",
+      "rank": "memorial",
+      "rank_num": 3.1
+    }
+  ],
+  "weekday": "monday"
+}

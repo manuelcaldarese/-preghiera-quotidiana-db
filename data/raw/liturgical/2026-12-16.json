@@ -1,0 +1,14 @@
+{
+  "date": "2026-12-16",
+  "season": "advent",
+  "season_week": 3,
+  "celebrations": [
+    {
+      "title": "Wednesday, 3rd week of Advent",
+      "colour": "violet",
+      "rank": "ferial",
+      "rank_num": 3.13
+    }
+  ],
+  "weekday": "wednesday"
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-01-02",
+  "season": "christmas",
+  "season_week": 1,
+  "celebrations": [
+    {
+      "title": "Saints Basil the Great and Gregory Nazianzen, bishops and doctors",
+      "colour": "white",
+      "rank": "memorial",
+      "rank_num": 3.1
+    }
+  ],
+  "weekday": "friday"
+}

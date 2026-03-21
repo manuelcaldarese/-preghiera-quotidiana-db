@@ -215,6 +215,18 @@ PRAYERS = [
             'pt': 'A ti, ó Deus, louvamos; a ti, Senhor, reconhecemos. A ti, Pai eterno, toda a terra venera. A ti todos os anjos, os céus e todas as potestades te aclamam. A ti os querubins e serafins com voz incessante proclamam: Santo, Santo, Santo é o Senhor Deus dos exércitos. Os céus e a terra estão cheios da majestade da tua glória. A ti glorifica o admirável coro dos apóstolos. Amém.'
         }
     },
+    # Esame di coscienza
+    {
+        'key': 'examination_of_conscience',
+        'category': 'sacraments',
+        'title': 'Esame di coscienza',
+        'text': {
+            'it': 'Prima di ricevere il sacramento della Riconciliazione, prenditi un momento di silenzio e rifletti:\n\n— Ho messo Dio al primo posto nella mia vita, o ho dato troppa importanza ad altre cose?\n— Ho pregato ogni giorno? Ho partecipato alla Messa domenicale?\n— Ho usato il nome di Dio o dei santi in modo irrispettoso?\n— Ho onorato e rispettato i miei genitori e chi ha autorità su di me?\n— Ho rispettato la vita propria e altrui, con le parole e con i fatti?\n— Sono stato onesto? Ho rubato, imbrogliato o detto menzogne?\n— Ho rispettato la dignità degli altri nelle mie parole, sguardi e azioni?\n— Ho preso ciò che non mi apparteneva, o ho danneggiato i beni altrui?\n— Ho detto false testimonianze o diffuso maldicenze su altri?\n— Ho provato invidia o desiderato ciò che appartiene al prossimo?\n\nPoi recita un atto di dolore sincero e confida nella misericordia di Dio.',
+            'en': 'Before receiving the sacrament of Reconciliation, take a moment of silence and reflect:\n\n— Have I put God first in my life, or have I given too much importance to other things?\n— Have I prayed every day? Have I attended Sunday Mass?\n— Have I used the name of God or the saints disrespectfully?\n— Have I honored and respected my parents and those in authority over me?\n— Have I respected the life of myself and others, in words and deeds?\n— Have I been honest? Have I stolen, cheated, or told lies?\n— Have I respected the dignity of others in my words, looks, and actions?\n— Have I taken what did not belong to me, or damaged the property of others?\n— Have I given false testimony or spread gossip about others?\n— Have I felt envy or desired what belongs to my neighbor?\n\nThen recite a sincere act of contrition and trust in God\'s mercy.',
+            'es': 'Antes de recibir el sacramento de la Reconciliación, tómate un momento de silencio y reflexiona:\n\n— ¿He puesto a Dios en primer lugar en mi vida, o he dado demasiada importancia a otras cosas?\n— ¿He rezado cada día? ¿He asistido a la Misa del domingo?\n— ¿He usado el nombre de Dios o de los santos de manera irrespetuosa?\n— ¿He honrado y respetado a mis padres y a quienes tienen autoridad sobre mí?\n— ¿He respetado la vida propia y ajena, con palabras y con hechos?\n— ¿He sido honesto? ¿He robado, engañado o dicho mentiras?\n— ¿He respetado la dignidad de los demás en mis palabras, miradas y acciones?\n— ¿He tomado lo que no me pertenecía, o he dañado los bienes ajenos?\n— ¿He dado falso testimonio o difundido calumnias sobre otros?\n— ¿He sentido envidia o deseado lo que pertenece a mi prójimo?\n\nLuego recita un sincero acto de contrición y confía en la misericordia de Dios.',
+            'pt': 'Antes de receber o sacramento da Reconciliação, reserve um momento de silêncio e reflita:\n\n— Coloquei Deus em primeiro lugar na minha vida, ou dei muita importância a outras coisas?\n— Rezei todos os dias? Participei da Missa dominical?\n— Usei o nome de Deus ou dos santos de forma desrespeitosa?\n— Honrei e respeitei meus pais e aqueles que têm autoridade sobre mim?\n— Respeitei a vida própria e alheia, com palavras e ações?\n— Fui honesto? Roubei, enganei ou disse mentiras?\n— Respeitei a dignidade dos outros em minhas palavras, olhares e ações?\n— Tomei o que não me pertencia ou danifiquei os bens alheios?\n— Dei falso testemunho ou espalhei calúnias sobre outros?\n— Senti inveja ou desejei o que pertence ao meu próximo?\n\nEm seguida, recite um sincero ato de contrição e confie na misericórdia de Deus.'
+        }
+    },
 ]
 
 MYSTERY_DEFS = {
@@ -340,6 +352,38 @@ if __name__ == '__main__':
     )
     print(f"Novene: {len(get_novena_rows())} righe inserite")
 
+    # 5d. Popola feast_calendar
+    from populate_feast_calendar import get_feast_calendar_rows
+    feast_rows = get_feast_calendar_rows()
+    cursor.executemany(
+        'INSERT INTO feast_calendar (month, day, saint_name, names_it, names_en, names_es, names_pt, feast_rank) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
+        feast_rows
+    )
+    print(f"Feast calendar: {len(feast_rows)} righe inserite")
+
+    # 5e. Popola saint_greeting
+    from populate_saint_greeting import get_saint_greeting_rows
+    greeting_rows = get_saint_greeting_rows()
+    cursor.executemany(
+        'INSERT INTO saint_greeting (saint_name, lang, greeting_short, greeting_long, fun_fact) VALUES (?, ?, ?, ?, ?)',
+        greeting_rows
+    )
+    print(f"Saint greeting: {len(greeting_rows)} righe inserite")
+
+    # 5f. Popola liturgical_day
+    print("Fetching liturgical day data...")
+    from fetch_liturgical_day import get_all_rows as get_liturgical_rows
+    liturgical_rows = get_liturgical_rows()
+    cursor.executemany(
+        '''INSERT INTO liturgical_day
+           (date, season, week_number, day_of_week, celebration_name,
+            celebration_type, liturgical_color, is_sunday, is_holy_day)
+           VALUES (:date, :season, :week_number, :day_of_week, :celebration_name,
+                   :celebration_type, :liturgical_color, :is_sunday, :is_holy_day)''',
+        liturgical_rows
+    )
+    print(f"Liturgical day: {len(liturgical_rows)} righe inserite")
+
     conn.commit()
 
     # 6. Fetch gospel and saints for entire year 2026
@@ -389,17 +433,16 @@ if __name__ == '__main__':
                 data = json.load(f)
             
             date_str = data.get('date')
+            reference = data.get('gospel_ref', '')
+            reading_1_ref = data.get('reading_1_ref', '')
+            source = data.get('season', '')
             for lang in ['it', 'en', 'es', 'pt']:
-                gospel_text_key = f'gospel_text_{lang}'
-                reading_1_text_key = f'reading_1_text_{lang}'
-                gospel_text = data.get(gospel_text_key, '')
-                reading_1_text = data.get(reading_1_text_key, '')
-                season = data.get('season', '')
-                
-                gospel_rows.append((date_str, lang, gospel_text, reading_1_text))
+                gospel_text = data.get(f'gospel_text_{lang}', '')
+                reading_1_text = data.get(f'reading_1_text_{lang}', '')
+                gospel_rows.append((date_str, lang, reference, gospel_text, reading_1_ref, reading_1_text, source))
 
         cursor.executemany(
-            'INSERT INTO gospel (date, lang, text, reading_1_text) VALUES (?, ?, ?, ?)',
+            'INSERT INTO gospel (date, lang, reference, text, reading_1_ref, reading_1_text, source) VALUES (?, ?, ?, ?, ?, ?, ?)',
             gospel_rows
         )
     
@@ -431,17 +474,21 @@ if __name__ == '__main__':
 
     # 8. Final summary
     counts = {}
-    for table in ('prayer', 'rosary_mystery', 'gospel', 'saint', 'via_crucis', 'novena'):
+    for table in ('prayer', 'rosary_mystery', 'gospel', 'saint', 'via_crucis', 'novena',
+                  'liturgical_day', 'feast_calendar', 'saint_greeting'):
         cursor.execute(f'SELECT COUNT(*) FROM {table}')
         counts[table] = cursor.fetchone()[0]
 
     expected = {
-        'prayer': 68,    # 17 preghiere × 4 lingue
+        'prayer': 68,
         'rosary_mystery': 80,
         'gospel': 1460,
         'saint': 1460,
         'via_crucis': 56,
         'novena': 180,
+        'liturgical_day': 365,
+        'feast_calendar': 140,
+        'saint_greeting': 400,
     }
 
     print('\n=== Database Summary ===')

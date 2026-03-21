@@ -1,0 +1,20 @@
+{
+  "date": "2026-06-02",
+  "season": "ordinary",
+  "season_week": 9,
+  "celebrations": [
+    {
+      "title": "Tuesday, 9th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saints Marcellinus and Peter, martyrs",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "tuesday"
+}

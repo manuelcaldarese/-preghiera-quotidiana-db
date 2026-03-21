@@ -1,0 +1,14 @@
+{
+  "date": "2026-03-01",
+  "season": "lent",
+  "season_week": 2,
+  "celebrations": [
+    {
+      "title": "2nd Sunday of Lent",
+      "colour": "violet",
+      "rank": "Primary liturgical days",
+      "rank_num": 1.2
+    }
+  ],
+  "weekday": "sunday"
+}

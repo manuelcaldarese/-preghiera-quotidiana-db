@@ -1,0 +1,20 @@
+{
+  "date": "2026-01-27",
+  "season": "ordinary",
+  "season_week": 3,
+  "celebrations": [
+    {
+      "title": "Tuesday, 3rd week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Angela Merici, virgin",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "tuesday"
+}

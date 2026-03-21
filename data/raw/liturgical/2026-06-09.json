@@ -1,0 +1,20 @@
+{
+  "date": "2026-06-09",
+  "season": "ordinary",
+  "season_week": 10,
+  "celebrations": [
+    {
+      "title": "Tuesday, 10th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Ephrem, deacon and doctor",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "tuesday"
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-06-20",
+  "season": "ordinary",
+  "season_week": 11,
+  "celebrations": [
+    {
+      "title": "Saturday, 11th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "The Memorial of the Blessed Virgin Mary on Saturday",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "saturday"
+}

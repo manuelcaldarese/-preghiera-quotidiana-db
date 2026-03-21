@@ -1,0 +1,14 @@
+{
+  "date": "2026-01-05",
+  "season": "christmas",
+  "season_week": 2,
+  "celebrations": [
+    {
+      "title": "Monday after Christmas Octave",
+      "colour": "white",
+      "rank": "ferial",
+      "rank_num": 3.13
+    }
+  ],
+  "weekday": "monday"
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-01-04",
+  "season": "christmas",
+  "season_week": 2,
+  "celebrations": [
+    {
+      "title": "2nd Sunday after the Nativity of the Lord",
+      "colour": "white",
+      "rank": "Sunday",
+      "rank_num": 2.6
+    }
+  ],
+  "weekday": "sunday"
+}

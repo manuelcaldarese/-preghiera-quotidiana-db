@@ -1,0 +1,14 @@
+{
+  "date": "2026-03-15",
+  "season": "lent",
+  "season_week": 4,
+  "celebrations": [
+    {
+      "title": "4th Sunday of Lent",
+      "colour": "violet",
+      "rank": "Primary liturgical days",
+      "rank_num": 1.2
+    }
+  ],
+  "weekday": "sunday"
+}

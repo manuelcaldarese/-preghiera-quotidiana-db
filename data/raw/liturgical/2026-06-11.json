@@ -1,0 +1,14 @@
+{
+  "date": "2026-06-11",
+  "season": "ordinary",
+  "season_week": 10,
+  "celebrations": [
+    {
+      "title": "Saint Barnabas the Apostle",
+      "colour": "red",
+      "rank": "memorial",
+      "rank_num": 3.1
+    }
+  ],
+  "weekday": "thursday"
+}

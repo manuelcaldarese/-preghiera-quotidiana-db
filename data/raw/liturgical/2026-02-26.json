@@ -1,0 +1,14 @@
+{
+  "date": "2026-02-26",
+  "season": "lent",
+  "season_week": 1,
+  "celebrations": [
+    {
+      "title": "Thursday, 1st week of Lent",
+      "colour": "violet",
+      "rank": "ferial",
+      "rank_num": 2.9
+    }
+  ],
+  "weekday": "thursday"
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-05-23",
+  "season": "easter",
+  "season_week": 7,
+  "celebrations": [
+    {
+      "title": "Saturday, 7th week of Easter",
+      "colour": "white",
+      "rank": "ferial",
+      "rank_num": 3.13
+    }
+  ],
+  "weekday": "saturday"
+}

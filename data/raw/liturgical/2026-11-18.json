@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-18",
+  "season": "ordinary",
+  "season_week": 33,
+  "celebrations": [
+    {
+      "title": "Wednesday, 33rd week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Dedication of the basilicas of Saints Peter and Paul, Apostles",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "wednesday"
+}

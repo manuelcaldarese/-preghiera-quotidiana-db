@@ -1,0 +1,20 @@
+{
+  "date": "2026-04-13",
+  "season": "easter",
+  "season_week": 2,
+  "celebrations": [
+    {
+      "title": "Monday, 2nd week of Easter",
+      "colour": "white",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Martin I, pope and martyr",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "monday"
+}

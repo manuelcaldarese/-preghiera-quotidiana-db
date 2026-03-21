@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-26",
+  "season": "ordinary",
+  "season_week": 25,
+  "celebrations": [
+    {
+      "title": "Saturday, 25th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saints Cosmas and Damian, martyrs",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    },
+    {
+      "title": "The Memorial of the Blessed Virgin Mary on Saturday",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "saturday"
+}

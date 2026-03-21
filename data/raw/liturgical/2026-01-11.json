@@ -1,0 +1,14 @@
+{
+  "date": "2026-01-11",
+  "season": "christmas",
+  "season_week": 3,
+  "celebrations": [
+    {
+      "title": "The Baptism of the Lord",
+      "colour": "white",
+      "rank": "feast",
+      "rank_num": 2.5
+    }
+  ],
+  "weekday": "sunday"
+}

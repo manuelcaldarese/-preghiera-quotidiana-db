@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-16",
+  "season": "ordinary",
+  "season_week": 33,
+  "celebrations": [
+    {
+      "title": "Monday, 33rd week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Margaret of Scotland",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    },
+    {
+      "title": "Saint Gertrude the Great, virgin",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "monday"
+}

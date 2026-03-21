@@ -1,0 +1,26 @@
+{
+  "date": "2026-06-27",
+  "season": "ordinary",
+  "season_week": 12,
+  "celebrations": [
+    {
+      "title": "Saturday, 12th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Cyril of Alexandria, bishop and doctor",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    },
+    {
+      "title": "The Memorial of the Blessed Virgin Mary on Saturday",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "saturday"
+}

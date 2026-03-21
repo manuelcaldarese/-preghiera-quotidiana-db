@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-12",
+  "season": "ordinary",
+  "season_week": 23,
+  "celebrations": [
+    {
+      "title": "Saturday, 23rd week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Holy Name of the Blessed Virgin Mary",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    },
+    {
+      "title": "The Memorial of the Blessed Virgin Mary on Saturday",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "saturday"
+}

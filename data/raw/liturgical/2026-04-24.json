@@ -1,0 +1,20 @@
+{
+  "date": "2026-04-24",
+  "season": "easter",
+  "season_week": 3,
+  "celebrations": [
+    {
+      "title": "Friday, 3rd week of Easter",
+      "colour": "white",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Fidelis of Sigmaringen, priest and martyr",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "friday"
+}

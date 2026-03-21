@@ -1,0 +1,20 @@
+{
+  "date": "2026-03-18",
+  "season": "lent",
+  "season_week": 4,
+  "celebrations": [
+    {
+      "title": "Wednesday, 4th week of Lent",
+      "colour": "violet",
+      "rank": "ferial",
+      "rank_num": 2.9
+    },
+    {
+      "title": "Saint Cyril of Jerusalem, bishop and doctor",
+      "colour": "violet",
+      "rank": "commemoration",
+      "rank_num": 4.0
+    }
+  ],
+  "weekday": "wednesday"
+}

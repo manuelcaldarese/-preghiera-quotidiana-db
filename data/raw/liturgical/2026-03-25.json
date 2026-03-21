@@ -1,0 +1,14 @@
+{
+  "date": "2026-03-25",
+  "season": "lent",
+  "season_week": 5,
+  "celebrations": [
+    {
+      "title": "Annunciation of the Lord",
+      "colour": "white",
+      "rank": "solemnity",
+      "rank_num": 1.3
+    }
+  ],
+  "weekday": "wednesday"
+}

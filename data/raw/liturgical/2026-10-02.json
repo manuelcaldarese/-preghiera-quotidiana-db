@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-02",
+  "season": "ordinary",
+  "season_week": 26,
+  "celebrations": [
+    {
+      "title": "Guardian Angels",
+      "colour": "white",
+      "rank": "memorial",
+      "rank_num": 3.1
+    }
+  ],
+  "weekday": "friday"
+}

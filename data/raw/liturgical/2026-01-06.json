@@ -1,0 +1,14 @@
+{
+  "date": "2026-01-06",
+  "season": "christmas",
+  "season_week": 2,
+  "celebrations": [
+    {
+      "title": "The Epiphany",
+      "colour": "white",
+      "rank": "Primary liturgical days",
+      "rank_num": 1.2
+    }
+  ],
+  "weekday": "tuesday"
+}

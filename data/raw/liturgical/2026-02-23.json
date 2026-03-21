@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-23",
+  "season": "lent",
+  "season_week": 1,
+  "celebrations": [
+    {
+      "title": "Monday, 1st week of Lent",
+      "colour": "violet",
+      "rank": "ferial",
+      "rank_num": 2.9
+    },
+    {
+      "title": "Saint Polycarp, bishop and martyr",
+      "colour": "violet",
+      "rank": "commemoration",
+      "rank_num": 4.0
+    }
+  ],
+  "weekday": "monday"
+}

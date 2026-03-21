@@ -1,0 +1,20 @@
+{
+  "date": "2026-12-23",
+  "season": "advent",
+  "season_week": 4,
+  "celebrations": [
+    {
+      "title": "23rd December",
+      "colour": "violet",
+      "rank": "ferial",
+      "rank_num": 2.9
+    },
+    {
+      "title": "Saint John of Kanty, priest",
+      "colour": "violet",
+      "rank": "commemoration",
+      "rank_num": 4.0
+    }
+  ],
+  "weekday": "wednesday"
+}

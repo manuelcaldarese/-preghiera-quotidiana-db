@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-28",
+  "season": "ordinary",
+  "season_week": 30,
+  "celebrations": [
+    {
+      "title": "Saint Simon and Saint Jude, apostles",
+      "colour": "red",
+      "rank": "feast",
+      "rank_num": 2.7
+    }
+  ],
+  "weekday": "wednesday"
+}

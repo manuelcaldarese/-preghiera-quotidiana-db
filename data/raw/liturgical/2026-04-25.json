@@ -1,0 +1,14 @@
+{
+  "date": "2026-04-25",
+  "season": "easter",
+  "season_week": 3,
+  "celebrations": [
+    {
+      "title": "Saint Mark the Evangelist",
+      "colour": "red",
+      "rank": "feast",
+      "rank_num": 2.7
+    }
+  ],
+  "weekday": "saturday"
+}

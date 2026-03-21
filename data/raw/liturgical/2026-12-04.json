@@ -1,0 +1,20 @@
+{
+  "date": "2026-12-04",
+  "season": "advent",
+  "season_week": 1,
+  "celebrations": [
+    {
+      "title": "Friday, 1st week of Advent",
+      "colour": "violet",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint John Damascene, priest and doctor",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "friday"
+}

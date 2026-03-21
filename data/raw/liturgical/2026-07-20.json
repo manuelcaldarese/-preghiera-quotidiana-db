@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-20",
+  "season": "ordinary",
+  "season_week": 16,
+  "celebrations": [
+    {
+      "title": "Monday, 16th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Apollinaris, bishop and martyr",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "monday"
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-04-01",
+  "season": "lent",
+  "season_week": 6,
+  "celebrations": [
+    {
+      "title": "Wednesday of Holy Week",
+      "colour": "violet",
+      "rank": "Primary liturgical days",
+      "rank_num": 1.2
+    }
+  ],
+  "weekday": "wednesday"
+}

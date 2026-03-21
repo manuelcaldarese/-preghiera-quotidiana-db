@@ -1,0 +1,14 @@
+{
+  "date": "2026-12-03",
+  "season": "advent",
+  "season_week": 1,
+  "celebrations": [
+    {
+      "title": "Saint Francis Xavier, priest",
+      "colour": "white",
+      "rank": "memorial",
+      "rank_num": 3.1
+    }
+  ],
+  "weekday": "thursday"
+}

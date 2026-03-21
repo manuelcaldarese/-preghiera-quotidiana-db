@@ -1,0 +1,14 @@
+{
+  "date": "2026-06-12",
+  "season": "ordinary",
+  "season_week": 10,
+  "celebrations": [
+    {
+      "title": "The Sacred Heart of Jesus",
+      "colour": "white",
+      "rank": "solemnity",
+      "rank_num": 1.3
+    }
+  ],
+  "weekday": "friday"
+}

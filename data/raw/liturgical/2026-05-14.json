@@ -1,0 +1,14 @@
+{
+  "date": "2026-05-14",
+  "season": "easter",
+  "season_week": 6,
+  "celebrations": [
+    {
+      "title": "The Ascension",
+      "colour": "white",
+      "rank": "Primary liturgical days",
+      "rank_num": 1.2
+    }
+  ],
+  "weekday": "thursday"
+}

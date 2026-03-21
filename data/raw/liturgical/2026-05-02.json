@@ -1,0 +1,14 @@
+{
+  "date": "2026-05-02",
+  "season": "easter",
+  "season_week": 4,
+  "celebrations": [
+    {
+      "title": "Saint Athanasius, bishop and doctor",
+      "colour": "white",
+      "rank": "memorial",
+      "rank_num": 3.1
+    }
+  ],
+  "weekday": "saturday"
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-02-10",
+  "season": "ordinary",
+  "season_week": 5,
+  "celebrations": [
+    {
+      "title": "Saint Scholastica, virgin",
+      "colour": "white",
+      "rank": "memorial",
+      "rank_num": 3.1
+    }
+  ],
+  "weekday": "tuesday"
+}

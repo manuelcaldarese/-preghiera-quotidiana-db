@@ -1,0 +1,14 @@
+{
+  "date": "2026-12-28",
+  "season": "christmas",
+  "season_week": 1,
+  "celebrations": [
+    {
+      "title": "Holy Innocents, martyrs",
+      "colour": "red",
+      "rank": "feast",
+      "rank_num": 2.7
+    }
+  ],
+  "weekday": "monday"
+}

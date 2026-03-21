@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-13",
+  "season": "ordinary",
+  "season_week": 15,
+  "celebrations": [
+    {
+      "title": "Monday, 15th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Henry",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "monday"
+}

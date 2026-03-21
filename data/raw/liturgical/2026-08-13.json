@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-13",
+  "season": "ordinary",
+  "season_week": 19,
+  "celebrations": [
+    {
+      "title": "Thursday, 19th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saints Pontian, pope, and Hippolytus, priest, martyrs",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "thursday"
+}

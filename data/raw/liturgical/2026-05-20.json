@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-20",
+  "season": "easter",
+  "season_week": 7,
+  "celebrations": [
+    {
+      "title": "Wednesday, 7th week of Easter",
+      "colour": "white",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Bernardine of Siena, priest",
+      "colour": "white",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "wednesday"
+}

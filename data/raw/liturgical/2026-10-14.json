@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-14",
+  "season": "ordinary",
+  "season_week": 28,
+  "celebrations": [
+    {
+      "title": "Wednesday, 28th week in Ordinary Time",
+      "colour": "green",
+      "rank": "ferial",
+      "rank_num": 3.13
+    },
+    {
+      "title": "Saint Callistus I, pope and martyr",
+      "colour": "red",
+      "rank": "optional memorial",
+      "rank_num": 3.12
+    }
+  ],
+  "weekday": "wednesday"
+}

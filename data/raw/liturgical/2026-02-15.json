@@ -1,0 +1,14 @@
+{
+  "date": "2026-02-15",
+  "season": "ordinary",
+  "season_week": 6,
+  "celebrations": [
+    {
+      "title": "6th Sunday in Ordinary Time",
+      "colour": "green",
+      "rank": "Sunday",
+      "rank_num": 2.6
+    }
+  ],
+  "weekday": "sunday"
+}
