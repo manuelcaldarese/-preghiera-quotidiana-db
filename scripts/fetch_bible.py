@@ -50,76 +50,132 @@ def normalize_reference(reference: str, lang: str) -> str:
     to API format (e.g., "MAT.1.16,MAT.1.18-MAT.1.21,MAT.1.24")
     """
     book_map = {
-        # Gospel
-        'matthew': 'MAT', 'mark': 'MRK', 'luke': 'LUK', 'john': 'JHN',
+        # Gospel — longer names before shorter to avoid prefix conflicts
+        'matthew': 'MAT', 'mark': 'MRK', 'luke': 'LUK',
+        # John epistles before John gospel to match "1 john" etc. first
+        '1 john': 'JO1', '2 john': 'JO2', '3 john': 'JO3',
+        'john': 'JHN',
         # Acts
         'acts': 'ACT',
-        # Paul
-        'romans': 'ROM', 'corinthians': 'CO1', '1 corinthians': 'CO1', '2 corinthians': 'CO2',
+        # Paul — numbered before generic
+        '1 corinthians': 'CO1', '2 corinthians': 'CO2', 'corinthians': 'CO1',
         'galatians': 'GAL', 'ephesians': 'EPH', 'philippians': 'PHP', 'colossians': 'COL',
-        'thessalonians': 'TH1', '1 thessalonians': 'TH1', '2 thessalonians': 'TH2',
-        'timothy': 'TI1', '1 timothy': 'TI1', '2 timothy': 'TI2',
+        '1 thessalonians': 'TH1', '2 thessalonians': 'TH2', 'thessalonians': 'TH1',
+        '1 timothy': 'TI1', '2 timothy': 'TI2', 'timothy': 'TI1',
         'titus': 'TIT', 'philemon': 'PHM',
+        'romans': 'ROM',
         # Hebrews, James, Peter
         'hebrews': 'HEB', 'james': 'JAS',
-        'peter': 'PE1', '1 peter': 'PE1', '2 peter': 'PE2',
-        # John epistles
-        'john': 'JHN',
-        '1 john': 'JO1', '2 john': 'JO2', '3 john': 'JO3',
+        '1 peter': 'PE1', '2 peter': 'PE2', 'peter': 'PE1',
         # Jude, Revelation
         'jude': 'JUD', 'revelation': 'REV',
         # Old Testament
         'genesis': 'GEN', 'exodus': 'EXO', 'leviticus': 'LEV', 'numbers': 'NUM', 'deuteronomy': 'DEU',
         'joshua': 'JOS', 'judges': 'JDG', 'ruth': 'RUT',
-        'samuel': 'SA1', '1 samuel': 'SA1', '2 samuel': 'SA2',
-        'kings': 'KI1', '1 kings': 'KI1', '2 kings': 'KI2',
-        'chronicles': 'CH1', '1 chronicles': 'CH1', '2 chronicles': 'CH2',
+        '1 samuel': 'SA1', '2 samuel': 'SA2', 'samuel': 'SA1',
+        '1 kings': 'KI1', '2 kings': 'KI2', 'kings': 'KI1',
+        '1 chronicles': 'CH1', '2 chronicles': 'CH2', 'chronicles': 'CH1',
         'ezra': 'EZR', 'nehemiah': 'NEH', 'esther': 'EST',
         'job': 'JOB', 'psalm': 'PSA', 'psalms': 'PSA', 'proverbs': 'PRO',
-        'ecclesiastes': 'ECC', 'song': 'SNG', 'song of songs': 'SNG', 'isaiah': 'ISA',
+        'ecclesiastes': 'ECC', 'song of songs': 'SNG', 'song': 'SNG', 'isaiah': 'ISA',
         'jeremiah': 'JER', 'lamentations': 'LAM', 'ezekiel': 'EZK', 'daniel': 'DAN',
         'hosea': 'HOS', 'joel': 'JOL', 'amos': 'AMO', 'obadiah': 'OBA',
         'jonah': 'JON', 'micah': 'MIC', 'nahum': 'NAH', 'habakkuk': 'HAB',
         'zephaniah': 'ZEP', 'haggai': 'HAG', 'zechariah': 'ZEC', 'malachi': 'MAL',
+        # Deuterocanonical
+        'sirach': 'SIR', 'ecclesiasticus': 'SIR',
+        'wisdom': 'WIS', 'tobit': 'TOB', 'judith': 'JDT', 'baruch': 'BAR',
+        '1 maccabees': 'MA1', '2 maccabees': 'MA2', 'maccabees': 'MA1',
     }
-    
+
     # Normalize input: remove extra spaces, make lowercase
     ref = re.sub(r'\s+', ' ', reference.strip()).lower()
-    
-    # Find book name
+
+    # Handle "X or Y" alternatives: take only the first option
+    ref = re.sub(r'\s+or\s+.*', '', ref)
+
+    # Normalize em-dash and en-dash to regular hyphen
+    ref = ref.replace('\u2014', '-').replace('\u2013', '-')
+
+    # Normalize semicolons to commas (semicolons separate segments with their own chapter:verse)
+    ref = ref.replace(';', ',')
+
+    # Find book name (try longest match first to avoid prefix conflicts)
     book_abbr = None
-    for book_name, abbr in book_map.items():
+    sorted_books = sorted(book_map.keys(), key=len, reverse=True)
+    for book_name in sorted_books:
         if ref.startswith(book_name):
-            book_abbr = abbr
-            # Remove book name from reference
+            book_abbr = book_map[book_name]
             ref = ref[len(book_name):].strip()
             break
-    
+
     if not book_abbr:
         return None
-    
-    # Parse chapter and verses: "1:16,18-21,24"
+
+    # Reject non-standard chapter formats (e.g. "Esther C:12" — Greek additions)
+    # by checking that the first chapter token is numeric
+    first_colon = ref.find(':')
+    if first_colon != -1:
+        chapter_token = ref[:first_colon].strip().lstrip(',').strip()
+        if chapter_token and not chapter_token.isdigit():
+            return None
+
+    # Parse chapter and verses: "1:16,18-21,24a"
     result = []
     parts = ref.split(',')
-    
+    current_chapter = None
+
     for part in parts:
         part = part.strip()
+        if not part:
+            continue
+
+        # Determine if this part starts with a chapter number (e.g. "18:9-10")
+        # vs. being a pure verse continuation (e.g. "14b", "24-25a", "30-19:3").
+        # A chapter-prefixed segment has a numeric token before the first colon.
+        has_chapter_prefix = False
         if ':' in part:
+            pre_colon = part.split(':', 1)[0].strip()
+            # pre_colon is a chapter number only if it's a plain integer
+            if pre_colon.isdigit():
+                has_chapter_prefix = True
+
+        if has_chapter_prefix:
             chapter, verses = part.split(':', 1)
-            chapter = chapter.strip()
-            
-            if '-' in verses:
-                # Range like "18-21"
-                v_start, v_end = verses.split('-')
-                result.append(f"{book_abbr}.{chapter}.{v_start.strip()}-{book_abbr}.{chapter}.{v_end.strip()}")
-            else:
-                # Single verse
-                result.append(f"{book_abbr}.{chapter}.{verses.strip()}")
+            current_chapter = chapter.strip()
+            verses = verses.strip()
         else:
-            # Chapter only, or might be continuation
-            if part and part != '-':
-                result.append(f"{book_abbr}.{part}")
-    
+            # Continuation segment: use current_chapter
+            verses = part
+
+        if not verses or not current_chapter:
+            continue
+
+        if not current_chapter.isdigit():
+            continue
+
+        if '-' in verses:
+            v_start, v_end = verses.split('-', 1)
+            v_start = re.sub(r'[a-z]+$', '', v_start.strip())
+
+            # Cross-chapter range: v_end contains chapter:verse (e.g. "19:3")
+            if ':' in v_end:
+                end_chap, end_verse = v_end.split(':', 1)
+                end_chap = end_chap.strip()
+                end_verse = re.sub(r'[a-z]+$', '', end_verse.strip())
+                result.append(
+                    f"{book_abbr}.{current_chapter}.{v_start}-{book_abbr}.{end_chap}.{end_verse}"
+                )
+                current_chapter = end_chap
+            else:
+                v_end = re.sub(r'[a-z]+$', '', v_end.strip())
+                result.append(
+                    f"{book_abbr}.{current_chapter}.{v_start}-{book_abbr}.{current_chapter}.{v_end}"
+                )
+        else:
+            v = re.sub(r'[a-z]+$', '', verses.strip())
+            result.append(f"{book_abbr}.{current_chapter}.{v}")
+
     return ','.join(result) if result else None
 
 def fetch_passage(reference: str, lang: str, api_key: str) -> Optional[str]:
@@ -151,45 +207,49 @@ def fetch_passage(reference: str, lang: str, api_key: str) -> Optional[str]:
         'content-type': 'text',
         'include-verse-numbers': 'false'
     }
-    
-    url = f"{API_BASE}/bibles/{bible_id}/passages/{passage_id}"
-    
-    max_retries = 3
-    retry_count = 0
-    
-    while retry_count < max_retries:
-        try:
-            response = requests.get(url, headers=headers, params=params, timeout=10)
-            
-            if response.status_code == 200:
-                data = response.json()
-                text = data.get('data', {}).get('content', '')
-                # Clean up any remaining HTML/XML tags
-                text = re.sub(r'<[^>]+>', '', text)
-                text = text.strip()
-                return text
-            
-            elif response.status_code == 404:
-                print(f"WARNING: Passage not found: {reference} in {lang}")
-                return None
-            
-            elif response.status_code == 429:
-                # Rate limit
-                print(f"WARN: Rate limit hit, waiting 60s...")
-                time.sleep(60)
-                retry_count += 1
-                continue
-            
-            else:
-                print(f"ERROR: HTTP {response.status_code} for {reference}: {response.text}")
-                return None
-        
-        except requests.exceptions.RequestException as e:
-            print(f"ERROR: Request failed for {reference} in {lang}: {e}")
-            return None
-    
-    print(f"ERROR: Max retries exceeded for {reference} in {lang}")
-    return None
+
+    # The API /passages endpoint does not accept comma-separated multi-segment IDs.
+    # Fetch each segment individually and concatenate.
+    segments = passage_id.split(',')
+    texts = []
+    for segment in segments:
+        url = f"{API_BASE}/bibles/{bible_id}/passages/{segment}"
+
+        max_retries = 3
+        retry_count = 0
+
+        while retry_count < max_retries:
+            try:
+                response = requests.get(url, headers=headers, params=params, timeout=10)
+
+                if response.status_code == 200:
+                    data = response.json()
+                    text = data.get('data', {}).get('content', '')
+                    text = re.sub(r'<[^>]+>', '', text)
+                    texts.append(text.strip())
+                    break
+
+                elif response.status_code == 404:
+                    print(f"WARNING: Passage not found: {segment} in {lang}")
+                    break
+
+                elif response.status_code == 429:
+                    print(f"WARN: Rate limit hit, waiting 60s...")
+                    time.sleep(60)
+                    retry_count += 1
+                    continue
+
+                else:
+                    print(f"ERROR: HTTP {response.status_code} for {reference}: {response.text}")
+                    break
+
+            except requests.exceptions.RequestException as e:
+                    print(f"ERROR: Request failed for {segment} in {lang}: {e}")
+                    break
+
+        time.sleep(0.3)  # piccolo delay tra segmenti per non stressare l'API
+
+    return ' '.join(texts) if texts else None
 
 
 if __name__ == '__main__':

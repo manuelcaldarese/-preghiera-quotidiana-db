@@ -94,7 +94,127 @@ PRAYERS = [
             'es': 'Dios mío, me arrepiento de todo corazón de haberte ofendido...',
             'pt': 'Ó meu Deus, arrependo-me de todo o coração de Vos ter ofendido...'
         }
-    }
+    },
+    # Preghiera di San Francesco
+    {
+        'key': 'prayer_of_saint_francis',
+        'category': 'daily',
+        'title': 'Preghiera di San Francesco',
+        'text': {
+            'it': 'Signore, fa\' di me uno strumento della tua pace. Dove è odio, ch\'io porti l\'amore; dove è offesa, ch\'io porti il perdono; dove è discordia, ch\'io porti l\'unione; dove è dubbio, ch\'io porti la fede; dove è errore, ch\'io porti la verità; dove è disperazione, ch\'io porti la speranza; dove è tristezza, ch\'io porti la gioia; dove sono le tenebre, ch\'io porti la luce. Maestro, fa\' che io non cerchi tanto: essere consolato, quanto consolare; essere compreso, quanto comprendere; essere amato, quanto amare. Poiché è dando, che si riceve; è perdonando, che si è perdonati; è morendo, che si risuscita a vita eterna. Amen.',
+            'en': 'Lord, make me an instrument of your peace. Where there is hatred, let me sow love; where there is injury, pardon; where there is discord, union; where there is doubt, faith; where there is error, truth; where there is despair, hope; where there is sadness, joy; where there are shadows, light. O Divine Master, grant that I may not so much seek to be consoled, as to console; to be understood, as to understand; to be loved, as to love. For it is in giving that we receive; it is in pardoning that we are pardoned; and it is in dying that we are born to eternal life. Amen.',
+            'es': 'Señor, haz de mí un instrumento de tu paz. Donde haya odio, que yo ponga amor; donde haya ofensa, que yo ponga perdón; donde haya discordia, que yo ponga unión; donde haya duda, que yo ponga fe; donde haya error, que yo ponga verdad; donde haya desesperación, que yo ponga esperanza; donde haya tristeza, que yo ponga alegría; donde haya tinieblas, que yo ponga luz. Maestro, concédeme que yo no busque tanto: ser consolado, como consolar; ser comprendido, como comprender; ser amado, como amar. Porque es dando como se recibe; es perdonando como se es perdonado; y es muriendo como se resucita a la vida eterna. Amén.',
+            'pt': 'Senhor, fazei de mim um instrumento da vossa paz. Onde houver ódio, que eu leve o amor; onde houver ofensa, que eu leve o perdão; onde houver discórdia, que eu leve a união; onde houver dúvida, que eu leve a fé; onde houver erro, que eu leve a verdade; onde houver desespero, que eu leve a esperança; onde houver tristeza, que eu leve a alegria; onde houver trevas, que eu leve a luz. Mestre, fazei que eu procure menos: ser consolado do que consolar; ser compreendido do que compreender; ser amado do que amar. Pois é dando que se recebe; é perdoando que se é perdoado; e é morrendo que se ressuscita para a vida eterna. Amém.'
+        }
+    },
+    # Coroncina della Divina Misericordia
+    {
+        'key': 'divine_mercy_chaplet',
+        'category': 'daily',
+        'title': 'Coroncina della Divina Misericordia',
+        'text': {
+            'it': 'Eterno Padre, offro a te il Corpo e il Sangue, l\'Anima e la Divinità del tuo amatissimo Figlio, Nostro Signore Gesù Cristo, in espiazione dei nostri peccati e di quelli del mondo intero. (Si recita sui grani del Padre Nostro.) Per la sua dolorosa Passione, abbi misericordia di noi e del mondo intero. (Si recita sui 10 grani dell\'Ave Maria.) Santo Dio, Santo Forte, Santo Immortale, abbi pietà di noi e del mondo intero. (Si recita 3 volte alla fine.) Amen.',
+            'en': 'Eternal Father, I offer you the Body and Blood, Soul and Divinity of Your dearly beloved Son, Our Lord Jesus Christ, in atonement for our sins and those of the whole world. (On the Our Father beads.) For the sake of His sorrowful Passion, have mercy on us and on the whole world. (On the Hail Mary beads, 10 times.) Holy God, Holy Mighty One, Holy Immortal One, have mercy on us and on the whole world. (Three times at the end.) Amen.',
+            'es': 'Padre Eterno, te ofrezco el Cuerpo y la Sangre, el Alma y la Divinidad de tu amadísimo Hijo, Nuestro Señor Jesucristo, en expiación de nuestros pecados y los del mundo entero. (En los granos del Padre Nuestro.) Por su dolorosa Pasión, ten misericordia de nosotros y del mundo entero. (En los 10 granos del Ave María.) Santo Dios, Santo Fuerte, Santo Inmortal, ten piedad de nosotros y del mundo entero. (Tres veces al final.) Amén.',
+            'pt': 'Pai Eterno, ofereço-vos o Corpo e o Sangue, a Alma e a Divindade do vosso amado Filho, Nosso Senhor Jesus Cristo, em reparação dos nossos pecados e dos do mundo inteiro. (Nos grãos do Pai Nosso.) Pela sua dolorosa Paixão, tende misericórdia de nós e do mundo inteiro. (Nos 10 grãos da Ave-Maria.) Santo Deus, Santo Forte, Santo Imortal, tende piedade de nós e do mundo inteiro. (Três vezes no final.) Amém.'
+        }
+    },
+    # Preghiera del mattino
+    {
+        'key': 'morning_prayer',
+        'category': 'daily',
+        'title': 'Preghiera del mattino',
+        'text': {
+            'it': 'Dio onnipotente ed eterno, ti ringrazio di cuore per aver vegliato su di me questa notte e per avermi concesso di vedere questo nuovo giorno. Ti offro tutto ciò che farò oggi: i miei pensieri, le mie parole, le mie azioni, le mie gioie e le mie sofferenze. Fa\' che tutto ciò che farò oggi sia per la tua gloria e per il bene delle anime. Guidami in questo giorno, preservami dal peccato e da ogni male. Amen.',
+            'en': 'Almighty and eternal God, I thank you heartily for watching over me this night and for granting me to see this new day. I offer you all that I will do today: my thoughts, my words, my actions, my joys and my sufferings. May all I do today be for your glory and for the good of souls. Guide me through this day, preserve me from sin and from all evil. Amen.',
+            'es': 'Dios todopoderoso y eterno, te doy gracias de corazón por haber velado sobre mí esta noche y por haberme concedido ver este nuevo día. Te ofrezco todo lo que haré hoy: mis pensamientos, mis palabras, mis acciones, mis alegrías y mis sufrimientos. Haz que todo lo que haga hoy sea para tu gloria y el bien de las almas. Guíame en este día, presérvame del pecado y de todo mal. Amén.',
+            'pt': 'Deus todo-poderoso e eterno, agradeço-te de coração por teres velado sobre mim esta noite e por me teres concedido ver este novo dia. Ofereço-te tudo o que farei hoje: os meus pensamentos, as minhas palavras, as minhas ações, as minhas alegrias e os meus sofrimentos. Faz que tudo o que eu fizer hoje seja para a tua glória e o bem das almas. Guia-me neste dia, preserva-me do pecado e de todo mal. Amém.'
+        }
+    },
+    # Preghiera della sera
+    {
+        'key': 'evening_prayer',
+        'category': 'daily',
+        'title': 'Preghiera della sera',
+        'text': {
+            'it': 'O Signore Dio, ti ringrazio per questo giorno che volge al termine. Hai vegliato su di me durante le ore di lavoro e di riposo. Ti chiedo perdono per ogni mancanza commessa oggi. Purifica il mio cuore durante questa notte e preservami da ogni pericolo. Affido a te la mia anima, il mio corpo, la mia famiglia e tutti coloro che mi sono cari. Amen.',
+            'en': 'O Lord God, I thank you for this day that is drawing to a close. You have watched over me during the hours of work and rest. I ask your forgiveness for every fault committed today. Purify my heart during this night and preserve me from all danger. I entrust to you my soul, my body, my family, and all those dear to me. Amen.',
+            'es': 'Oh Señor Dios, te doy gracias por este día que llega a su fin. Has velado sobre mí durante las horas de trabajo y descanso. Te pido perdón por cada falta cometida hoy. Purifica mi corazón durante esta noche y presérvame de todo peligro. Te encomiendo mi alma, mi cuerpo, mi familia y todos los que me son queridos. Amén.',
+            'pt': 'Ó Senhor Deus, agradeço-te por este dia que chega ao fim. Velaste sobre mim durante as horas de trabalho e descanso. Peço-te perdão por cada falta cometida hoje. Purifica o meu coração durante esta noite e preserva-me de todo perigo. Confio-te a minha alma, o meu corpo, a minha família e todos os que me são queridos. Amém.'
+        }
+    },
+    # Preghiera per i defunti
+    {
+        'key': 'prayer_for_the_dead',
+        'category': 'daily',
+        'title': 'Preghiera per i defunti',
+        'text': {
+            'it': 'O Signore, dona la pace eterna alle anime dei fedeli defunti, specialmente a coloro che mi sono stati cari. La luce perpetua risplenda su di loro. Riposino in pace. Amen.',
+            'en': 'O Lord, grant eternal rest to the souls of the faithful departed, especially those who were dear to me. May perpetual light shine upon them. May they rest in peace. Amen.',
+            'es': 'Oh Señor, concede el eterno descanso a las almas de los fieles difuntos, especialmente a los que me fueron queridos. La luz perpetua brille sobre ellos. Descansen en paz. Amén.',
+            'pt': 'Ó Senhor, concede o descanso eterno às almas dos fiéis defuntos, especialmente àqueles que me foram queridos. A luz perpétua brilhe sobre eles. Descansem em paz. Amém.'
+        }
+    },
+    # Preghiera per i malati
+    {
+        'key': 'prayer_for_the_sick',
+        'category': 'daily',
+        'title': 'Preghiera per i malati',
+        'text': {
+            'it': 'O Gesù, che hai guarito tanti malati durante la tua vita terrena, guarda con misericordia tutti i malati del mondo. Allevia le loro sofferenze, dona loro la speranza, e se è nella tua volontà, restituiscili alla salute. Sostieni le loro famiglie e chi si prende cura di loro. Amen.',
+            'en': 'O Jesus, who healed so many sick during your earthly life, look with mercy upon all the sick in the world. Alleviate their sufferings, give them hope, and if it is your will, restore them to health. Support their families and those who care for them. Amen.',
+            'es': 'Oh Jesús, que sanaste a tantos enfermos durante tu vida terrena, mira con misericordia a todos los enfermos del mundo. Alivia sus sufrimientos, dales esperanza y, si es tu voluntad, devuélvelos a la salud. Sostén a sus familias y a quienes cuidan de ellos. Amén.',
+            'pt': 'Ó Jesus, que curaste tantos doentes durante a tua vida terrena, olha com misericórdia para todos os doentes do mundo. Alivia os seus sofrimentos, dá-lhes esperança e, se for a tua vontade, restitui-lhes a saúde. Sustenta as suas famílias e quem cuida deles. Amém.'
+        }
+    },
+    # Preghiera prima della Confessione
+    {
+        'key': 'prayer_before_confession',
+        'category': 'sacraments',
+        'title': 'Preghiera prima della Confessione',
+        'text': {
+            'it': 'O Spirito Santo, illumina la mia mente e il mio cuore perché possa vedere chiaramente i miei peccati. Donami un sincero dolore per averli commessi e il fermo proposito di non ricadervi. Maria, Madre di misericordia, intercedi per me. Amen.',
+            'en': 'O Holy Spirit, enlighten my mind and heart so that I may see my sins clearly. Grant me sincere sorrow for having committed them and a firm purpose not to fall into them again. Mary, Mother of mercy, intercede for me. Amen.',
+            'es': 'Oh Espíritu Santo, ilumina mi mente y mi corazón para que pueda ver claramente mis pecados. Concédeme un sincero dolor por haberlos cometido y el firme propósito de no reincidir en ellos. María, Madre de misericordia, intercede por mí. Amén.',
+            'pt': 'Ó Espírito Santo, ilumina a minha mente e o meu coração para que possa ver claramente os meus pecados. Concede-me um sincero arrependimento por os ter cometido e o firme propósito de não reincidir neles. Maria, Mãe de misericórdia, intercede por mim. Amém.'
+        }
+    },
+    # Preghiera di ringraziamento dopo la Comunione
+    {
+        'key': 'prayer_after_communion',
+        'category': 'sacraments',
+        'title': 'Preghiera di ringraziamento dopo la Comunione',
+        'text': {
+            'it': 'O Gesù, sei venuto a me! Ti accolgo con tutto il mio cuore. Rimani con me, non lasciarmi. Trasforma la mia vita con la tua presenza. Fa\' che io ti porti agli altri con la mia vita. Grazie, Signore, per questo dono immenso. Amen.',
+            'en': 'O Jesus, you have come to me! I welcome you with all my heart. Remain with me, do not leave me. Transform my life with your presence. May I bring you to others through my life. Thank you, Lord, for this immense gift. Amen.',
+            'es': 'Oh Jesús, ¡has venido a mí! Te acojo con todo mi corazón. Permanece conmigo, no me dejes. Transforma mi vida con tu presencia. Haz que te lleve a los demás con mi vida. Gracias, Señor, por este inmenso don. Amén.',
+            'pt': 'Ó Jesus, vieste a mim! Acolho-te com todo o meu coração. Fica comigo, não me abandones. Transforma a minha vida com a tua presença. Faz que eu te leve aos outros com a minha vida. Obrigado, Senhor, por este imenso dom. Amém.'
+        }
+    },
+    # Memorare
+    {
+        'key': 'memorare',
+        'category': 'marian',
+        'title': 'Memorare',
+        'text': {
+            'it': 'Ricordati, o piissima Vergine Maria, che non si è mai udito al mondo che alcuno abbia ricorso al tuo patrocinio, implorato il tuo aiuto, chiesto la tua intercessione e sia stato abbandonato. Animato da tale fiducia, a te ricorro, o Vergine delle Vergini e Madre mia; a te vengo, davanti a te mi prostro peccatore pentito. O Madre del Verbo incarnato, non disprezzare le mie suppliche, ma ascoltale propizia ed esaudiscile. Amen.',
+            'en': 'Remember, O most gracious Virgin Mary, that never was it known that anyone who fled to thy protection, implored thy help, or sought thine intercession was left unaided. Inspired by this confidence, I fly unto thee, O Virgin of virgins, my Mother; to thee do I come, before thee I stand, sinful and sorrowful. O Mother of the Word Incarnate, despise not my petitions, but in thy mercy hear and answer me. Amen.',
+            'es': 'Acuérdate, oh piadosísima Virgen María, que jamás se ha oído decir que ninguno de los que han acudido a tu protección, implorado tu auxilio y reclamado tu socorro haya sido abandonado. Animado por esta confianza, a ti acudo, oh Madre, Virgen de las vírgenes; a ti vengo, ante ti me presento gemebundo y pecador. No quieras, oh Madre del Verbo Encarnado, desechar mis súplicas, antes bien, escúchalas y acógelas benignamente. Amén.',
+            'pt': 'Lembrai-vos, ó dulcíssima Virgem Maria, que jamais se ouviu dizer que algum daqueles que recorreram ao vosso patrocínio, imploraram o vosso auxílio ou buscaram o vosso socorro tenha sido abandonado. Animado por esta confiança, a vós recorro, ó Mãe, Virgem das Virgens; a vós venho, diante de vós me apresento, pecador e gemendo. Não desprezeis as minhas súplicas, ó Mãe do Verbo Encarnado, mas atendei-as e ouvi-as propiciamente. Amém.'
+        }
+    },
+    # Inno Te Deum
+    {
+        'key': 'te_deum',
+        'category': 'hymn',
+        'title': 'Te Deum',
+        'text': {
+            'it': 'Noi ti lodiamo, o Dio, noi ti proclamiamo Signore. O eterno Padre, tutta la terra ti adora. A te cantano gli angeli e tutte le potenze dei cieli: Santo, Santo, Santo il Signore Dio dell\'universo. I cieli e la terra sono pieni della tua gloria. Ti proclama il glorioso coro degli apostoli, ti loda la schiera ammirabile dei profeti, ti esalta l\'esercito candido dei martiri. La santa Chiesa in tutto il mondo proclama la tua gloria: Padre di maestà infinita, il tuo venerando vero e unico Figlio, e lo Spirito Santo Paraclito. Tu sei il re della gloria, o Cristo, tu sei il Figlio eterno del Padre. Amen.',
+            'en': 'We praise thee, O God; we acknowledge thee to be the Lord. All the earth doth worship thee, the Father everlasting. To thee all angels cry aloud, the heavens and all the powers therein. To thee cherubim and seraphim continually do cry: Holy, Holy, Holy, Lord God of Sabaoth. Heaven and earth are full of the majesty of thy glory. The glorious company of the apostles praise thee. The goodly fellowship of the prophets praise thee. The noble army of martyrs praise thee. The holy Church throughout all the world doth acknowledge thee. Amen.',
+            'es': 'A ti, oh Dios, te alabamos; a ti, Señor, te reconocemos. A ti, Padre eterno, te venera toda la creación. Los ángeles todos, los cielos y todas las potestades te honran. Los querubines y serafines te cantan sin cesar: Santo, Santo, Santo es el Señor Dios de los ejércitos. Los cielos y la tierra están llenos de la majestad de tu gloria. A ti te ensalza el glorioso coro de los apóstoles. Amén.',
+            'pt': 'A ti, ó Deus, louvamos; a ti, Senhor, reconhecemos. A ti, Pai eterno, toda a terra venera. A ti todos os anjos, os céus e todas as potestades te aclamam. A ti os querubins e serafins com voz incessante proclamam: Santo, Santo, Santo é o Senhor Deus dos exércitos. Os céus e a terra estão cheios da majestade da tua glória. A ti glorifica o admirável coro dos apóstolos. Amém.'
+        }
+    },
 ]
 
 MYSTERY_DEFS = {
@@ -204,6 +324,22 @@ if __name__ == '__main__':
         mystery_rows
     )
 
+    # 5b. Popola via_crucis
+    from populate_via_crucis import get_via_crucis_rows
+    cursor.executemany(
+        'INSERT INTO via_crucis (station, lang, title, meditation, prayer, scripture_ref) VALUES (?, ?, ?, ?, ?, ?)',
+        get_via_crucis_rows()
+    )
+    print(f"Via Crucis: {len(get_via_crucis_rows())} righe inserite")
+
+    # 5c. Popola novena
+    from populate_novene import get_novena_rows
+    cursor.executemany(
+        'INSERT INTO novena (novena_key, day, lang, title, intention, prayer, scripture_ref) VALUES (?, ?, ?, ?, ?, ?, ?)',
+        get_novena_rows()
+    )
+    print(f"Novene: {len(get_novena_rows())} righe inserite")
+
     conn.commit()
 
     # 6. Fetch gospel and saints for entire year 2026
@@ -260,10 +396,10 @@ if __name__ == '__main__':
                 reading_1_text = data.get(reading_1_text_key, '')
                 season = data.get('season', '')
                 
-                gospel_rows.append((date_str, lang, season, gospel_text, reading_1_text, None))
-        
+                gospel_rows.append((date_str, lang, gospel_text, reading_1_text))
+
         cursor.executemany(
-            'INSERT INTO gospel (date, lang, season, gospel_text, reading_1_text, audio_tts_hint) VALUES (?, ?, ?, ?, ?, ?)',
+            'INSERT INTO gospel (date, lang, text, reading_1_text) VALUES (?, ?, ?, ?)',
             gospel_rows
         )
     
@@ -279,36 +415,43 @@ if __name__ == '__main__':
             
             date_str = data.get('date')
             for lang in ['it', 'en', 'es', 'pt']:
-                name_key = f'name_{lang}'
-                bio_key = f'bio_{lang}'
-                name = data.get(name_key, '')
-                bio = data.get(bio_key, '')
-                
-                saint_rows.append((date_str, lang, name, bio, None))
-        
+                name = data.get(f'name_{lang}', '')
+                bio = data.get(f'bio_{lang}', '')
+                feast_type = data.get(f'feast_type_{lang}', '')
+                wikipedia_url = data.get(f'wikipedia_url_{lang}', '')
+
+                saint_rows.append((date_str, lang, name, feast_type, bio, wikipedia_url))
+
         cursor.executemany(
-            'INSERT INTO saint (date, lang, name, biography, audio_tts_hint) VALUES (?, ?, ?, ?, ?)',
+            'INSERT INTO saint (date, lang, name, feast_type, short_bio, wikipedia_url) VALUES (?, ?, ?, ?, ?, ?)',
             saint_rows
         )
     
     conn.commit()
 
     # 8. Final summary
-    cursor.execute('SELECT COUNT(*) FROM prayer')
-    prayer_count = cursor.fetchone()[0]
-    cursor.execute('SELECT COUNT(*) FROM rosary_mystery')
-    mystery_count = cursor.fetchone()[0]
-    cursor.execute('SELECT COUNT(*) FROM gospel')
-    gospel_count = cursor.fetchone()[0]
-    cursor.execute('SELECT COUNT(*) FROM saint')
-    saint_count = cursor.fetchone()[0]
+    counts = {}
+    for table in ('prayer', 'rosary_mystery', 'gospel', 'saint', 'via_crucis', 'novena'):
+        cursor.execute(f'SELECT COUNT(*) FROM {table}')
+        counts[table] = cursor.fetchone()[0]
+
+    expected = {
+        'prayer': 68,    # 17 preghiere × 4 lingue
+        'rosary_mystery': 80,
+        'gospel': 1460,
+        'saint': 1460,
+        'via_crucis': 56,
+        'novena': 180,
+    }
 
     print('\n=== Database Summary ===')
     print(f'DB creato in {DB_PATH}')
-    print(f' - prayer: {prayer_count} righe')
-    print(f' - rosary_mystery: {mystery_count} righe')
-    print(f' - gospel: {gospel_count} righe')
-    print(f' - saint: {saint_count} righe')
+    print(f'{"Tabella":<20} {"Righe":>8} {"Attese":>8} {"Stato":>6}')
+    print('-' * 46)
+    for table, count in counts.items():
+        exp = expected.get(table, '?')
+        ok = 'OK' if count >= exp else 'KO'
+        print(f'{table:<20} {count:>8} {exp:>8} {ok:>6}')
     print('======================')
 
     conn.close()

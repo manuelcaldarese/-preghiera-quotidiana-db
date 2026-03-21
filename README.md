@@ -267,3 +267,57 @@ Get a free API key: https://api.bible
 - 🇬🇧 English (en)
 - 🇪🇸 Spanish (es)
 - 🇵🇹 Portuguese (pt)
+
+---
+
+## Checklist operativa
+
+Steps in ordine di priorità per portare il DB allo stato production-ready.
+
+### Fase 1 — Bug fix (già completati)
+- [x] Fix `normalize_reference` in `fetch_bible.py` — verificati 5 casi di test (chapter inheritance + suffix strip)
+- [x] Fix colonne INSERT in `build_db.py` (`gospel_text` → `text`, `biography` → `short_bio`, rimosso `audio_tts_hint` da gospel/saint)
+- [x] Aggiungere `python-dotenv` a `scripts/requirements.txt`
+
+### Fase 2 — Schema e contenuti statici
+- [ ] Aggiungere tabelle `via_crucis` e `novena` a `schema.sql`
+- [ ] Creare `scripts/populate_via_crucis.py` con 14 stazioni × 4 lingue = 56 righe
+- [ ] Creare `scripts/populate_novene.py` con 5 novene × 9 giorni × 4 lingue = 180 righe
+- [ ] Aggiungere 10 preghiere statiche aggiuntive in `build_db.py` (San Francesco, Coroncina, mattino, sera, defunti, malati, esame di coscienza, confessione, comunione, Te Deum)
+- [ ] Integrare `populate_via_crucis.py` e `populate_novene.py` nell'orchestrator `build_db.py`
+
+### Fase 3 — Test gate (obbligatorio prima del build completo)
+- [ ] Installare dipendenze: `pip install -r scripts/requirements.txt`
+- [ ] Test fetch su data singola `2026-03-19`: verificare che `gospel_text_it`, `gospel_text_en`, `gospel_text_es`, `gospel_text_pt` siano tutti non vuoti
+- [ ] Test fetch santo `2026-03-19`: verificare che `bio_it`, `bio_en`, `bio_es`, `bio_pt` siano tutti non vuoti
+
+### Fase 4 — Build completo
+- [ ] Eseguire `python3 scripts/build_db.py` per l'anno 2026
+- [ ] Monitorare: `ls data/raw/gospel/ | wc -l` → attesi 365 file JSON
+- [ ] Monitorare: `ls data/raw/saints/ | wc -l` → attesi 365 file JSON
+
+### Fase 5 — Validazione finale
+- [x] `gospel`: 1.460 righe, zero `text` vuoti
+- [x] `saint`: 1.460 righe, zero `name` vuoti
+- [x] `prayer`: 68 righe (17 × 4 lingue)
+- [x] `rosary_mystery`: 80 righe
+- [x] `via_crucis`: 56 righe (14 × 4 lingue)
+- [x] `novena`: 180 righe (5 novene × 9 giorni × 4 lingue)
+- [x] Nessun gap nel calendario 2026 in `gospel`
+
+### Stato attuale bio santi
+
+61/365 date hanno bio Wikipedia (le restanti sono eventi liturgici senza bio o santi non mappati).
+
+**Da sistemare — bio mancante per rate limit Wikipedia:**
+```bash
+# Quando Wikipedia è di nuovo disponibile (verificare con curl):
+curl -s -w "%{http_code}" -H "User-Agent: PreghieraQuotidiana/1.0" \
+  "https://en.wikipedia.org/api/rest_v1/page/summary/Nereus_and_Achilleus" | tail -1
+# Se restituisce 200:
+rm data/raw/saints/2026-05-12.json
+python3 scripts/fetch_saints.py --test-date 2026-05-12
+python3 scripts/build_db.py
+```
+
+Il mapping completo è in `data/saint_wikipedia_mapping.json`.

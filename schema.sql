@@ -71,6 +71,27 @@ CREATE TABLE rosary_mystery (
     recommended_days TEXT
 );
 
+CREATE TABLE via_crucis (
+    id INTEGER PRIMARY KEY,
+    station INTEGER NOT NULL,
+    lang TEXT NOT NULL,
+    title TEXT NOT NULL,
+    meditation TEXT NOT NULL,
+    prayer TEXT NOT NULL,
+    scripture_ref TEXT
+);
+
+CREATE TABLE novena (
+    id INTEGER PRIMARY KEY,
+    novena_key TEXT NOT NULL,
+    day INTEGER NOT NULL,
+    lang TEXT NOT NULL,
+    title TEXT NOT NULL,
+    intention TEXT,
+    prayer TEXT NOT NULL,
+    scripture_ref TEXT
+);
+
 CREATE INDEX idx_gospel_date_lang ON gospel(date, lang);
 CREATE INDEX idx_saint_date_lang ON saint(date, lang);
 CREATE INDEX idx_liturgy_date_lang_office ON liturgy_proper(date, lang, office);
