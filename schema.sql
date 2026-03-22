@@ -113,6 +113,14 @@ CREATE TABLE saint_greeting (
     fun_fact TEXT
 );
 
+CREATE TABLE psalm (
+    id INTEGER PRIMARY KEY,
+    number INTEGER NOT NULL,
+    lang TEXT NOT NULL,
+    title TEXT,
+    text TEXT NOT NULL
+);
+
 CREATE TABLE hours_prayer (
     id INTEGER PRIMARY KEY,
     date TEXT NOT NULL,
@@ -141,3 +149,4 @@ CREATE INDEX idx_prayer_key_lang ON prayer(key, lang);
 CREATE INDEX idx_feast_calendar_month_day ON feast_calendar(month, day);
 CREATE INDEX idx_saint_greeting_name_lang ON saint_greeting(saint_name, lang);
 CREATE INDEX idx_hours_prayer_date_lang_hour ON hours_prayer(date, lang, hour);
+CREATE INDEX idx_psalm_number_lang ON psalm(number, lang);

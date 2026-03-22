@@ -8,7 +8,7 @@ This project fetches and aggregates Catholic daily readings, saint information, 
 
 ## Database State (as of 2026-03-22)
 
-### Schema — 11 tables
+### Schema — 13 tables
 
 | Table | Rows | Description |
 |-------|------|-------------|
@@ -20,7 +20,8 @@ This project fetches and aggregates Catholic daily readings, saint information, 
 | `novena` | 180 | 5 novenas × 9 days × 4 languages |
 | `liturgical_day` | 365 | Liturgical calendar metadata for 2026 (season, color, rank, etc.) |
 | `liturgy_proper` | 2,190 | Liturgy of the Hours core (Lauds + Vespers) — 365 days × 3 languages (IT, EN, ES) |
-| `hours_prayer` | 2,190 | Liturgy of the Hours extended: adds hymn, invitatory, responsory — 365 days × 3 languages |
+| `hours_prayer` | 4,380 | Liturgy of the Hours (Lauds, Terce, Vespers, Compline) — 365 days × 3 languages × 4 hours |
+| `psalm` | 450 | All 150 psalms with full text — 150 psalms × 3 languages (IT, EN, ES) |
 | `feast_calendar` | 188 | Saint name → feast day mapping with name variants in 4 languages |
 | `saint_greeting` | 544 | Personalized feast-day greetings for saints, in 4 languages |
 
@@ -65,9 +66,14 @@ liturgy_proper (date, lang, office, antiphon_1, antiphon_2, antiphon_3, short_re
   - Languages: IT, EN, ES (PT not available in DivinumOfficium)
 
 hours_prayer (date, lang, hour, invitatory, hymn, antiphon_1, psalm_1_ref, psalm_1_text, antiphon_2, psalm_2_ref, psalm_2_text, short_reading, short_reading_ref, responsory, benedictus_magnificat, intercessions, collect)
-  - 365 days × 3 languages × 2 hours (lauds/vespers) = 2,190 rows ✅
-  - Extends liturgy_proper with hymn text, invitatory antiphon, responsory
-  - psalm_1/2_text and intercessions are NULL (app-side responsibility)
+  - 365 days × 3 languages × 4 hours (lauds/terce/vespers/compline) = 4,380 rows ✅
+  - Compline is static (same text every day, per language)
+  - psalm_1/2_text and intercessions are NULL (app joins psalm table / generates dynamically)
+
+psalm (number, lang, title, text)
+  - 150 psalms × 3 languages = 450 rows ✅
+  - Full psalm text, one row per psalm per language
+  - hours_prayer.psalm_1_ref / psalm_2_ref point to psalm.number
 
 feast_calendar (month, day, saint_name, names_it, names_en, names_es, names_pt, feast_rank)
   - 188 rows ✅
@@ -161,19 +167,20 @@ python3 scripts/validate_db.py
 | `populate_feast_calendar.py` | Populates the `feast_calendar` table |
 | `populate_saint_greeting.py` | Populates the `saint_greeting` table |
 | `populate_liturgy_proper.py` | Populates `liturgy_proper` from DivinumOfficium source files |
-| `populate_hours_prayer.py` | Populates `hours_prayer` — extends `liturgy_proper` with hymn, invitatory, responsory |
+| `populate_hours_prayer.py` | Populates `hours_prayer` — Lauds, Terce, Vespers, Compline with hymn/invitatory/responsory |
+| `populate_psalm.py` | Populates `psalm` — all 150 psalms × 3 languages from DivinumOfficium |
 | `validate_db.py` | Validates row counts and data quality; exits 0 if production-ready |
 
 ---
 
 ## Languages Supported
 
-| Language | gospel | saint | prayer | rosary | via_crucis | novena | liturgy_proper | hours_prayer |
-|----------|--------|-------|--------|--------|------------|--------|----------------|--------------|
-| 🇮🇹 Italian (it) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| 🇬🇧 English (en) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| 🇪🇸 Spanish (es) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| 🇵🇹 Portuguese (pt) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ (not in source) | ❌ (not in source) |
+| Language | gospel | saint | prayer | rosary | via_crucis | novena | liturgy_proper | hours_prayer | psalm |
+|----------|--------|-------|--------|--------|------------|--------|----------------|--------------|-------|
+| 🇮🇹 Italian (it) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 🇬🇧 English (en) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 🇪🇸 Spanish (es) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 🇵🇹 Portuguese (pt) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 
 ---
 

@@ -26,7 +26,8 @@ EXPECTED = {
     "liturgy_proper": 365 * 3 * 2,
     "feast_calendar": None,     # variabile
     "saint_greeting": None,     # variabile
-    "hours_prayer":   365 * 3 * 2,
+    "hours_prayer":   365 * 3 * 4,
+    "psalm":          150 * 3,
 }
 
 GREEN  = "\033[92m"

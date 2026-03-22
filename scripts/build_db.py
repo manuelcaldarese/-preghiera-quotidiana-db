@@ -485,7 +485,12 @@ if __name__ == '__main__':
     from populate_liturgy_proper import main as populate_liturgy_proper_main
     populate_liturgy_proper_main()
 
-    # 9. Popola hours_prayer (estende liturgy_proper con inno, invitatorio, responsorio)
+    # 9. Popola psalm (150 salmi × 3 lingue)
+    print("\nPopolando psalm...")
+    from populate_psalm import main as populate_psalm_main
+    populate_psalm_main()
+
+    # 10. Popola hours_prayer (lauds, terce, vespers, compline × 3 lingue)
     print("\nPopolando hours_prayer...")
     from populate_hours_prayer import main as populate_hours_prayer_main
     populate_hours_prayer_main()
@@ -497,7 +502,7 @@ if __name__ == '__main__':
     counts = {}
     for table in ('prayer', 'rosary_mystery', 'gospel', 'saint', 'via_crucis', 'novena',
                   'liturgical_day', 'feast_calendar', 'saint_greeting',
-                  'liturgy_proper', 'hours_prayer'):
+                  'liturgy_proper', 'hours_prayer', 'psalm'):
         cursor.execute(f'SELECT COUNT(*) FROM {table}')
         counts[table] = cursor.fetchone()[0]
 
@@ -512,7 +517,8 @@ if __name__ == '__main__':
         'feast_calendar': 140,
         'saint_greeting': 400,
         'liturgy_proper': 365 * 3 * 2,
-        'hours_prayer': 365 * 3 * 2,
+        'hours_prayer': 365 * 3 * 4,
+        'psalm': 150 * 3,
     }
 
     print('\n=== Database Summary ===')
