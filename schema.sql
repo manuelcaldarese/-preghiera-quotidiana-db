@@ -113,9 +113,31 @@ CREATE TABLE saint_greeting (
     fun_fact TEXT
 );
 
+CREATE TABLE hours_prayer (
+    id INTEGER PRIMARY KEY,
+    date TEXT NOT NULL,
+    lang TEXT NOT NULL,
+    hour TEXT NOT NULL,
+    invitatory TEXT,
+    hymn TEXT,
+    antiphon_1 TEXT,
+    psalm_1_ref TEXT,
+    psalm_1_text TEXT,
+    antiphon_2 TEXT,
+    psalm_2_ref TEXT,
+    psalm_2_text TEXT,
+    short_reading TEXT,
+    short_reading_ref TEXT,
+    responsory TEXT,
+    benedictus_magnificat TEXT,
+    intercessions TEXT,
+    collect TEXT
+);
+
 CREATE INDEX idx_gospel_date_lang ON gospel(date, lang);
 CREATE INDEX idx_saint_date_lang ON saint(date, lang);
 CREATE INDEX idx_liturgy_date_lang_office ON liturgy_proper(date, lang, office);
 CREATE INDEX idx_prayer_key_lang ON prayer(key, lang);
 CREATE INDEX idx_feast_calendar_month_day ON feast_calendar(month, day);
 CREATE INDEX idx_saint_greeting_name_lang ON saint_greeting(saint_name, lang);
+CREATE INDEX idx_hours_prayer_date_lang_hour ON hours_prayer(date, lang, hour);

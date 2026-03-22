@@ -288,6 +288,13 @@ MYSTERY_TITLES = {
 }
 
 if __name__ == '__main__':
+    import argparse
+    parser = argparse.ArgumentParser(description='Build prayers.db')
+    parser.add_argument('--year', type=int, default=2026,
+                        help='Anno liturgico da costruire (default: 2026)')
+    args = parser.parse_args()
+    YEAR = args.year
+
     # 1. Assicura cartelle
     os.makedirs('data', exist_ok=True)
 
@@ -393,8 +400,8 @@ if __name__ == '__main__':
     from datetime import datetime, timedelta
     import json
 
-    start_date = datetime.strptime('2026-01-01', '%Y-%m-%d')
-    end_date = datetime.strptime('2026-12-31', '%Y-%m-%d')
+    start_date = datetime.strptime(f'{YEAR}-01-01', '%Y-%m-%d')
+    end_date = datetime.strptime(f'{YEAR}-12-31', '%Y-%m-%d')
     
     current_date = start_date
     fetched_gospels = 0
@@ -472,10 +479,25 @@ if __name__ == '__main__':
     
     conn.commit()
 
-    # 8. Final summary
+    # 8. Popola liturgy_proper da DivinumOfficium
+    conn.close()
+    print("\nPopolando liturgy_proper da DivinumOfficium...")
+    from populate_liturgy_proper import main as populate_liturgy_proper_main
+    populate_liturgy_proper_main()
+
+    # 9. Popola hours_prayer (estende liturgy_proper con inno, invitatorio, responsorio)
+    print("\nPopolando hours_prayer...")
+    from populate_hours_prayer import main as populate_hours_prayer_main
+    populate_hours_prayer_main()
+
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+
+    # 10. Final summary
     counts = {}
     for table in ('prayer', 'rosary_mystery', 'gospel', 'saint', 'via_crucis', 'novena',
-                  'liturgical_day', 'feast_calendar', 'saint_greeting'):
+                  'liturgical_day', 'feast_calendar', 'saint_greeting',
+                  'liturgy_proper', 'hours_prayer'):
         cursor.execute(f'SELECT COUNT(*) FROM {table}')
         counts[table] = cursor.fetchone()[0]
 
@@ -489,6 +511,8 @@ if __name__ == '__main__':
         'liturgical_day': 365,
         'feast_calendar': 140,
         'saint_greeting': 400,
+        'liturgy_proper': 365 * 3 * 2,
+        'hours_prayer': 365 * 3 * 2,
     }
 
     print('\n=== Database Summary ===')

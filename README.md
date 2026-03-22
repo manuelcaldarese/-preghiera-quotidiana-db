@@ -1,90 +1,104 @@
 # Preghiera Quotidiana Database
 
-A Python system to build and populate a SQLite database (`data/prayers.db`) with multilingual biblical content for the entire year 2026. Integrates data from multiple REST APIs to create a comprehensive liturgical resource.
+A Python system to build and populate a SQLite database (`data/prayers.db`) with multilingual Catholic liturgical content for the entire year 2026. Integrates data from multiple sources to create a comprehensive daily prayer resource.
 
 ## Overview
 
-This project fetches and aggregates Catholic daily readings, saint information, and prayer data in 4 languages (Italian, English, Spanish, Portuguese) for every day of 2026.
+This project fetches and aggregates Catholic daily readings, saint information, prayer data, and Liturgy of the Hours content in 4 languages (Italian, English, Spanish, Portuguese) for every day of 2026.
 
-## Current State of the Art
+## Database State (as of 2026-03-22)
 
-### ✅ Completed Features
+### Schema — 11 tables
 
-**Core Infrastructure:**
-- ✅ SQLite database schema with 6 tables (gospel, saint, prayer, rosary_mystery, liturgy_proper, liturgical_day)
-- ✅ Environment-based API key management (via `.env` file)
-- ✅ Database creation and schema initialization
-- ✅ Indexed queries for fast lookups by date and language
+| Table | Rows | Description |
+|-------|------|-------------|
+| `gospel` | 1,460 | Daily Mass gospel + first reading + psalm — 365 days × 4 languages |
+| `saint` | 1,460 | Daily saint info with Wikipedia biography — 365 days × 4 languages |
+| `prayer` | 72 | 18 traditional Catholic prayers × 4 languages |
+| `rosary_mystery` | 80 | 20 mysteries (Joyful, Sorrowful, Glorious, Luminous) × 4 languages |
+| `via_crucis` | 56 | 14 Stations of the Cross × 4 languages |
+| `novena` | 180 | 5 novenas × 9 days × 4 languages |
+| `liturgical_day` | 365 | Liturgical calendar metadata for 2026 (season, color, rank, etc.) |
+| `liturgy_proper` | 2,190 | Liturgy of the Hours core (Lauds + Vespers) — 365 days × 3 languages (IT, EN, ES) |
+| `hours_prayer` | 2,190 | Liturgy of the Hours extended: adds hymn, invitatory, responsory — 365 days × 3 languages |
+| `feast_calendar` | 188 | Saint name → feast day mapping with name variants in 4 languages |
+| `saint_greeting` | 544 | Personalized feast-day greetings for saints, in 4 languages |
 
-**Data Population:**
-- ✅ **Prayer Table**: 17 traditional Catholic prayers (Lord's Prayer, Hail Mary, Glory Be, etc.) in 4 languages (28 rows total)
-- ✅ **Rosary Mysteries Table**: 20 mysteries (5 Joyful, 5 Sorrowful, 5 Glorious, 5 Luminous) with descriptions and scripture references in 4 languages (80 rows total)
+### Data Quality
 
-**Data Fetching Modules:**
-- ✅ `fetch_bible.py`: Parses human-readable biblical references (e.g., "Matthew 1:16,18-21") and fetches full verse text from rest.api.bible with language-specific Bible ID lookup
-- ✅ `fetch_gospel.py`: Fetches daily gospel readings from cpbjr.github.io, resolves biblical text in 4 languages, implements intelligent caching with resolved data validation
-- ✅ `fetch_saints.py`: Fetches saint information from cpbjr.github.io and enriches with Wikipedia biographies in 4 languages (with fallback to English if translation unavailable)
-- ✅ API rate limiting and error handling with retry logic (429 status → 60s wait)
-- ✅ Comprehensive error logging to `data/raw/errors.log`
+- `gospel`: 0 empty texts, 0 missing names, full 2026 coverage
+- `saint`: 0 missing names; 61/365 dates have Wikipedia biography (the rest are liturgical events without a dedicated saint)
+- `liturgy_proper`: 100% date coverage; `antiphon_1` and `short_reading` always populated; `collect` NULL for 6 edge-case days
+- `prayer`: 18 prayers — Lord's Prayer, Hail Mary, Glory Be, Apostles' Creed, Angelus, Regina Coeli, Memorare, Te Deum, Divine Mercy Chaplet, Prayer of Saint Francis, Morning Prayer, Evening Prayer, Examination of Conscience, Prayer Before Confession, Prayer After Communion, Prayer for the Dead, Prayer for the Sick, Act of Contrition
 
-**Recent Bug Fixes:**
-- ✅ Fixed `fetch_gospel.py` cache bug: Now saves complete JSON with resolved `gospel_text_{lang}` fields AFTER fetching all language versions (not before)
-- ✅ Fixed `fetch_saints.py` to save complete JSON with resolved `bio_{lang}` fields
-- ✅ Added `.env` loading to `build_db.py` via `python-dotenv`
-- ✅ Enhanced cache validation: Only uses cached files if they contain fully resolved data
-
-### 🔄 In Progress
-
-**Database Population:**
-- Currently executing: Full year 2026 gospel and saint data fetching
-- Expected: ~1,460 gospel rows (365 days × 4 languages)
-- Expected: ~1,460 saint rows (365 days × 4 languages)
-- Status: Gospel/saint fetching active, insertion pending
-
-### ❌ Known Issues
-
-1. **Column Name Mismatch** (needs fix):
-   - `build_db.py` insert statement references non-existent columns:
-     - `gospel_text` should be `text`
-     - `biography` should be `short_bio`
-     - `audio_tts_hint` doesn't exist on gospel/saint tables (only on prayer)
-
-2. **Incomplete Data Population**:
-   - gospel and saint tables still empty (0 rows) - waiting for fetches to complete and correct insert statements
-   - liturgy_proper table not yet implemented
-   - liturgical_day table not yet implemented
+---
 
 ## Architecture
 
 ### Database Schema
 
 ```
-gospel (date, lang, season, text, reading_1_text, ...)
-  - 365 days × 4 languages = 1,460 rows (when complete)
-  
+gospel (date, lang, reference, title, text, reading_1_ref, reading_1_text, psalm_ref, psalm_text, source)
+  - 365 days × 4 languages = 1,460 rows ✅
+
 saint (date, lang, name, short_bio, ...)
-  - 365 days × 4 languages = 1,460 rows (when complete)
-  
+  - 365 days × 4 languages = 1,460 rows ✅
+
 prayer (key, lang, category, title, text)
-  - 17 prayers × 4 languages = 68 rows ✅ (complete)
-  
+  - 18 prayers × 4 languages = 72 rows ✅
+
 rosary_mystery (type, number, lang, title, description, ...)
-  - 20 mysteries × 4 languages = 80 rows ✅ (complete)
+  - 20 mysteries × 4 languages = 80 rows ✅
+
+via_crucis (...)
+  - 14 stations × 4 languages = 56 rows ✅
+
+novena (...)
+  - 5 novenas × 9 days × 4 languages = 180 rows ✅
+
+liturgical_day (date, season, week_number, day_of_week, celebration_name, celebration_type, liturgical_color, is_sunday, is_holy_day)
+  - 365 rows ✅
+
+liturgy_proper (date, lang, office, antiphon_1, antiphon_2, antiphon_3, short_reading, short_reading_ref, collect, benedictus_ant, magnificat_ant)
+  - 365 days × 3 languages × 2 offices (lauds/vespers) = 2,190 rows ✅
+  - Source: DivinumOfficium (github.com/DivinumOfficium/divinum-officium)
+  - Languages: IT, EN, ES (PT not available in DivinumOfficium)
+
+hours_prayer (date, lang, hour, invitatory, hymn, antiphon_1, psalm_1_ref, psalm_1_text, antiphon_2, psalm_2_ref, psalm_2_text, short_reading, short_reading_ref, responsory, benedictus_magnificat, intercessions, collect)
+  - 365 days × 3 languages × 2 hours (lauds/vespers) = 2,190 rows ✅
+  - Extends liturgy_proper with hymn text, invitatory antiphon, responsory
+  - psalm_1/2_text and intercessions are NULL (app-side responsibility)
+
+feast_calendar (month, day, saint_name, names_it, names_en, names_es, names_pt, feast_rank)
+  - 188 rows ✅
+
+saint_greeting (saint_name, lang, greeting_short, greeting_long, fun_fact)
+  - 544 rows ✅
 ```
 
-### External APIs
+### External APIs & Sources
 
-- **rest.api.bible**: `https://rest.api.bible/v1/` (Bible passages)
+- **rest.api.bible**: `https://rest.api.bible/v1/` — Bible passages
   - Auth: `api-key` header
-  - Handles rate limiting (429) with retry
-  
+  - Handles rate limiting (429) with 60s retry
+
 - **cpbjr.github.io**: Catholic daily readings and saints
-  - Endpoint: `/readings/2026/{MM-DD}.json`
-  - Endpoint: `/saints/2026/{MM-DD}.json`
-  
+  - `/readings/2026/{MM-DD}.json`
+  - `/saints/2026/{MM-DD}.json`
+
 - **Wikipedia REST API**: Saint biographies
   - `https://{lang}.wikipedia.org/api/rest_v1/page/summary/{name}`
   - Languages: it, en, es, pt (with en fallback)
+
+- **calapi.inadiutorium.cz**: Liturgical calendar metadata
+  - Used to populate `liturgical_day`
+
+- **DivinumOfficium** (local clone): Liturgy of the Hours text
+  - `github.com/DivinumOfficium/divinum-officium`
+  - Cloned to `/workspaces/divinum-officium/`
+  - Languages: Italiano, English, Espanol
+
+---
 
 ## Setup & Installation
 
@@ -103,154 +117,65 @@ pip install -r scripts/requirements.txt
 
 # Create .env file with API key
 echo "BIBLE_API_KEY=<your_api_key_here>" > .env
+
+# Clone DivinumOfficium (needed for liturgy_proper only)
+git clone --depth=1 --filter=blob:none --sparse https://github.com/DivinumOfficium/divinum-officium.git /workspaces/divinum-officium
+cd /workspaces/divinum-officium
+git sparse-checkout set web/www/horas/Italiano web/www/horas/English web/www/horas/Espanol
+git checkout
+cd /workspaces/-preghiera-quotidiana-db
 ```
 
 ### Build Database
 
 ```bash
-# Full build (creates DB + fetches all 2026 data + populates tables)
+# Full build for 2026 (default)
 python3 scripts/build_db.py
 
-# Estimated time: ~1 hour
+# Full build for a different year
+python3 scripts/build_db.py --year 2027
+
+# Populate Liturgy of the Hours only (requires DivinumOfficium clone above)
+python3 scripts/populate_liturgy_proper.py
+python3 scripts/populate_hours_prayer.py
+
+# Validate the DB
+python3 scripts/validate_db.py
 ```
 
-## Next Steps & Recommendations
+---
 
-### 🚨 Critical Fixes (Before Testing)
+## Scripts
 
-1. **Fix INSERT Statement Column Names**
-   ```python
-   # In build_db.py, fix these:
-   # gospel: gospel_text → text, remove audio_tts_hint
-   # saint: biography → short_bio, remove audio_tts_hint
-   ```
+| Script | Description |
+|--------|-------------|
+| `build_db.py` | Main orchestrator: creates schema, fetches all data, populates all tables |
+| `fetch_gospel.py` | Fetches daily gospel readings in 4 languages with caching |
+| `fetch_saints.py` | Fetches saint data + Wikipedia biographies in 4 languages |
+| `fetch_bible.py` | Parses biblical references and fetches full verse text |
+| `fetch_liturgical_day.py` | Fetches liturgical calendar metadata from calapi |
+| `populate_prayers.py` | Populates the `prayer` table (included in build_db.py) |
+| `populate_rosary.py` | Populates the `rosary_mystery` table (included in build_db.py) |
+| `populate_via_crucis.py` | Populates the `via_crucis` table |
+| `populate_novene.py` | Populates the `novena` table |
+| `populate_feast_calendar.py` | Populates the `feast_calendar` table |
+| `populate_saint_greeting.py` | Populates the `saint_greeting` table |
+| `populate_liturgy_proper.py` | Populates `liturgy_proper` from DivinumOfficium source files |
+| `populate_hours_prayer.py` | Populates `hours_prayer` — extends `liturgy_proper` with hymn, invitatory, responsory |
+| `validate_db.py` | Validates row counts and data quality; exits 0 if production-ready |
 
-2. **Verify Data Fetching Completes**
-   - Monitor: `ls data/raw/gospel/ data/raw/saints/ | wc -l`
-   - Expected: 365 JSON files in each directory
+---
 
-3. **Verify Data Insertion**
-   - After build completes: `sqlite3 data/prayers.db "SELECT COUNT(*) FROM gospel;"`
-   - Expected: 1460 rows
+## Languages Supported
 
-### 📝 Suggested Tests
+| Language | gospel | saint | prayer | rosary | via_crucis | novena | liturgy_proper | hours_prayer |
+|----------|--------|-------|--------|--------|------------|--------|----------------|--------------|
+| 🇮🇹 Italian (it) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 🇬🇧 English (en) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 🇪🇸 Spanish (es) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 🇵🇹 Portuguese (pt) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ (not in source) | ❌ (not in source) |
 
-#### Unit Tests (`tests/test_fetch_modules.py`)
-```python
-def test_fetch_gospel_day_returns_resolved_texts():
-    """Verify gospel_text_it, gospel_text_en, etc. are present"""
-    
-def test_fetch_saint_day_returns_resolved_bios():
-    """Verify bio_it, bio_en, etc. are present"""
-    
-def test_fetch_bible_normalizes_references():
-    """Test: 'Matthew 1:16,18-21' → valid API format"""
-    
-def test_api_rate_limiting_honored():
-    """Verify 1s delays between calls in fetch_gospel"""
-```
-
-#### Integration Tests (`tests/test_database_build.py`)
-```python
-def test_database_creation_succeeds():
-    """Verify prayers.db created from schema.sql"""
-    
-def test_prayer_table_populated():
-    """Verify 28 rows (17 prayers × 4 langs)"""
-    
-def test_rosary_mystery_table_populated():
-    """Verify 80 rows (20 mysteries × 4 langs)"""
-    
-def test_gospel_table_multilingual():
-    """For 2026-01-01: verify 4 rows (one per lang)"""
-    
-def test_saint_table_has_biographies():
-    """Verify short_bio field populated for each date/lang"""
-    
-def test_resolved_gospel_text_not_references():
-    """Verify gospel.text contains actual verses, not 'Matthew 1:16'"""
-    
-def test_cache_validation_skips_incomplete_data():
-    """Verify cache files with missing gospel_text_* are re-fetched"""
-```
-
-#### Query Tests (`tests/test_queries.py`)
-```python
-def test_query_gospel_by_date_and_language():
-    """SELECT * FROM gospel WHERE date='2026-01-01' AND lang='it'"""
-    
-def test_query_saint_by_date():
-    """SELECT DISTINCT name FROM saint WHERE date='2026-03-19'"""
-    
-def test_query_prayer_by_category():
-    """SELECT * FROM prayer WHERE category='rosary'"""
-    
-def test_multilingual_consistency():
-    """Verify each date has 4 gospel rows (one per lang)"""
-```
-
-#### Data Validation Tests (`tests/test_data_quality.py`)
-```python
-def test_no_empty_gospel_texts():
-    """gospel.text should never be empty string"""
-    
-def test_saint_names_not_null():
-    """saint.name should always be populated"""
-    
-def test_dates_are_valid_iso8601():
-    """All dates match YYYY-MM-DD format"""
-    
-def test_language_codes_valid():
-    """lang column only contains: it, en, es, pt"""
-```
-
-### 📊 Performance & Quality
-
-- Add query performance benchmarks (index usage)
-- Validate all 1,460 gospel entries have non-empty text
-- Check saint biography retrieval success rate (measure Wikipedia availability)
-- Profile: Memory usage for full 365-day fetch
-
-### 📚 Documentation Enhancements
-
-- Add data dictionary (column meanings)
-- Document API fallback behavior
-- Create troubleshooting guide for API errors
-- Add example queries for common use cases
-
-### 🔮 Future Features
-
-- Populate `liturgy_proper` table (Office antiphons, readings)
-- Implement `liturgical_day` table with liturgical colors/week numbers
-- Add caching strategy for Wikipedia (reduce redundant calls)
-- Support historical years (not just 2026)
-- Add TTS audio generation hints to saint biographies
-- Create REST API layer on top of database
-- Build web UI for daily prayer browsing
-
-## File Structure
-
-```
-/workspace/
-├── README.md (this file)
-├── schema.sql                    # Database schema
-├── data/
-│   ├── prayers.db              # Main SQLite database
-│   ├── raw/
-│   │   ├── gospel/             # Cached gospel JSON (2026-01-01.json, ...)
-│   │   ├── saints/             # Cached saint JSON (2026-01-01.json, ...)
-│   │   └── errors.log          # Error log from fetches
-│   ├── processed/
-│   └── (future: processed data artifacts)
-└── scripts/
-    ├── build_db.py             # Main orchestrator
-    ├── fetch_bible.py          # Bible passage fetching
-    ├── fetch_gospel.py         # Gospel reading fetching
-    ├── fetch_saints.py         # Saint data fetching
-    ├── populate_prayers.py     # (included in build_db.py)
-    ├── populate_rosary.py      # (included in build_db.py)
-    └── requirements.txt
-```
+---
 
 ## API Keys & Environment
 
@@ -261,63 +186,70 @@ BIBLE_API_KEY=your_api_key_here
 
 Get a free API key: https://api.bible
 
-## Languages Supported
+---
 
-- 🇮🇹 Italian (it)
-- 🇬🇧 English (en)
-- 🇪🇸 Spanish (es)
-- 🇵🇹 Portuguese (pt)
+## File Structure
+
+```
+/workspaces/-preghiera-quotidiana-db/
+├── README.md
+├── schema.sql                          # Database schema
+├── data/
+│   ├── prayers.db                      # Main SQLite database
+│   ├── saint_wikipedia_mapping.json    # Saint → Wikipedia name mapping
+│   └── raw/
+│       ├── gospel/                     # Cached gospel JSON (365 files)
+│       ├── saints/                     # Cached saint JSON (365 files)
+│       ├── liturgical/                 # Cached liturgical day JSON (365 files)
+│       └── errors.log                  # Error log from fetches
+└── scripts/
+    ├── build_db.py
+    ├── fetch_bible.py
+    ├── fetch_gospel.py
+    ├── fetch_saints.py
+    ├── fetch_liturgical_day.py
+    ├── fetch_liturgy.py
+    ├── populate_prayers.py
+    ├── populate_rosary.py
+    ├── populate_via_crucis.py
+    ├── populate_novene.py
+    ├── populate_feast_calendar.py
+    ├── populate_saint_greeting.py
+    ├── populate_liturgy_proper.py
+    ├── populate_hours_prayer.py
+    ├── validate_db.py
+    ├── quick_test.py
+    └── requirements.txt
+```
 
 ---
 
-## Checklist operativa
+## Note su `saint.short_bio`
 
-Steps in ordine di priorità per portare il DB allo stato production-ready.
+61/365 date hanno bio Wikipedia. Le restanti sono eventi liturgici senza una pagina dedicata (es. "Feria del Tempo Ordinario") o santi non mappati nel catalogo Wikipedia.
 
-### Fase 1 — Bug fix (già completati)
-- [x] Fix `normalize_reference` in `fetch_bible.py` — verificati 5 casi di test (chapter inheritance + suffix strip)
-- [x] Fix colonne INSERT in `build_db.py` (`gospel_text` → `text`, `biography` → `short_bio`, rimosso `audio_tts_hint` da gospel/saint)
-- [x] Aggiungere `python-dotenv` a `scripts/requirements.txt`
-
-### Fase 2 — Schema e contenuti statici
-- [ ] Aggiungere tabelle `via_crucis` e `novena` a `schema.sql`
-- [ ] Creare `scripts/populate_via_crucis.py` con 14 stazioni × 4 lingue = 56 righe
-- [ ] Creare `scripts/populate_novene.py` con 5 novene × 9 giorni × 4 lingue = 180 righe
-- [ ] Aggiungere 10 preghiere statiche aggiuntive in `build_db.py` (San Francesco, Coroncina, mattino, sera, defunti, malati, esame di coscienza, confessione, comunione, Te Deum)
-- [ ] Integrare `populate_via_crucis.py` e `populate_novene.py` nell'orchestrator `build_db.py`
-
-### Fase 3 — Test gate (obbligatorio prima del build completo)
-- [ ] Installare dipendenze: `pip install -r scripts/requirements.txt`
-- [ ] Test fetch su data singola `2026-03-19`: verificare che `gospel_text_it`, `gospel_text_en`, `gospel_text_es`, `gospel_text_pt` siano tutti non vuoti
-- [ ] Test fetch santo `2026-03-19`: verificare che `bio_it`, `bio_en`, `bio_es`, `bio_pt` siano tutti non vuoti
-
-### Fase 4 — Build completo
-- [ ] Eseguire `python3 scripts/build_db.py` per l'anno 2026
-- [ ] Monitorare: `ls data/raw/gospel/ | wc -l` → attesi 365 file JSON
-- [ ] Monitorare: `ls data/raw/saints/ | wc -l` → attesi 365 file JSON
-
-### Fase 5 — Validazione finale
-- [x] `gospel`: 1.460 righe, zero `text` vuoti
-- [x] `saint`: 1.460 righe, zero `name` vuoti
-- [x] `prayer`: 68 righe (17 × 4 lingue)
-- [x] `rosary_mystery`: 80 righe
-- [x] `via_crucis`: 56 righe (14 × 4 lingue)
-- [x] `novena`: 180 righe (5 novene × 9 giorni × 4 lingue)
-- [x] Nessun gap nel calendario 2026 in `gospel`
-
-### Stato attuale bio santi
-
-61/365 date hanno bio Wikipedia (le restanti sono eventi liturgici senza bio o santi non mappati).
-
-**Da sistemare — bio mancante per rate limit Wikipedia:**
+Per rigenerare le bio mancanti dopo un rate limit Wikipedia:
 ```bash
-# Quando Wikipedia è di nuovo disponibile (verificare con curl):
+# Verificare disponibilità:
 curl -s -w "%{http_code}" -H "User-Agent: PreghieraQuotidiana/1.0" \
   "https://en.wikipedia.org/api/rest_v1/page/summary/Nereus_and_Achilleus" | tail -1
-# Se restituisce 200:
+# Se 200:
 rm data/raw/saints/2026-05-12.json
 python3 scripts/fetch_saints.py --test-date 2026-05-12
 python3 scripts/build_db.py
 ```
 
 Il mapping completo è in `data/saint_wikipedia_mapping.json`.
+
+---
+
+## Note su `liturgy_proper`
+
+I testi dell'Ufficio delle Ore provengono da **DivinumOfficium** (forma straordinaria del Rito Romano). Il database usa la forma ordinaria per il calendario (`liturgical_day`), quindi esiste una leggera divergenza nelle settimane del Tempo Ordinario — i testi rimangono appropriati alla stagione liturgica.
+
+Fallback chain per ogni sezione:
+1. File proprio della festa (`Sancti/MM-DD.txt`)
+2. File stagionale (`Tempora/`)
+3. Domenica della stessa settimana (per feriali senza Oratio/Capitulum)
+4. Psalterium settimanale (per antifone feriali)
+5. Lettura breve stagionale da `Psalterium/Special/Matutinum Special.txt`
