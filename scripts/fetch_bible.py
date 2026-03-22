@@ -53,28 +53,28 @@ def normalize_reference(reference: str, lang: str) -> str:
         # Gospel — longer names before shorter to avoid prefix conflicts
         'matthew': 'MAT', 'mark': 'MRK', 'luke': 'LUK',
         # John epistles before John gospel to match "1 john" etc. first
-        '1 john': 'JO1', '2 john': 'JO2', '3 john': 'JO3',
+        '1 john': '1JN', '2 john': '2JN', '3 john': '3JN',
         'john': 'JHN',
         # Acts
         'acts': 'ACT',
         # Paul — numbered before generic
-        '1 corinthians': 'CO1', '2 corinthians': 'CO2', 'corinthians': 'CO1',
+        '1 corinthians': '1CO', '2 corinthians': '2CO', 'corinthians': '1CO',
         'galatians': 'GAL', 'ephesians': 'EPH', 'philippians': 'PHP', 'colossians': 'COL',
-        '1 thessalonians': 'TH1', '2 thessalonians': 'TH2', 'thessalonians': 'TH1',
-        '1 timothy': 'TI1', '2 timothy': 'TI2', 'timothy': 'TI1',
+        '1 thessalonians': '1TH', '2 thessalonians': '2TH', 'thessalonians': '1TH',
+        '1 timothy': '1TI', '2 timothy': '2TI', 'timothy': '1TI',
         'titus': 'TIT', 'philemon': 'PHM',
         'romans': 'ROM',
         # Hebrews, James, Peter
         'hebrews': 'HEB', 'james': 'JAS',
-        '1 peter': 'PE1', '2 peter': 'PE2', 'peter': 'PE1',
+        '1 peter': '1PE', '2 peter': '2PE', 'peter': '1PE',
         # Jude, Revelation
         'jude': 'JUD', 'revelation': 'REV',
         # Old Testament
         'genesis': 'GEN', 'exodus': 'EXO', 'leviticus': 'LEV', 'numbers': 'NUM', 'deuteronomy': 'DEU',
         'joshua': 'JOS', 'judges': 'JDG', 'ruth': 'RUT',
-        '1 samuel': 'SA1', '2 samuel': 'SA2', 'samuel': 'SA1',
-        '1 kings': 'KI1', '2 kings': 'KI2', 'kings': 'KI1',
-        '1 chronicles': 'CH1', '2 chronicles': 'CH2', 'chronicles': 'CH1',
+        '1 samuel': '1SA', '2 samuel': '2SA', 'samuel': '1SA',
+        '1 kings': '1KI', '2 kings': '2KI', 'kings': '1KI',
+        '1 chronicles': '1CH', '2 chronicles': '2CH', 'chronicles': '1CH',
         'ezra': 'EZR', 'nehemiah': 'NEH', 'esther': 'EST',
         'job': 'JOB', 'psalm': 'PSA', 'psalms': 'PSA', 'proverbs': 'PRO',
         'ecclesiastes': 'ECC', 'song of songs': 'SNG', 'song': 'SNG', 'isaiah': 'ISA',
@@ -85,7 +85,7 @@ def normalize_reference(reference: str, lang: str) -> str:
         # Deuterocanonical
         'sirach': 'SIR', 'ecclesiasticus': 'SIR',
         'wisdom': 'WIS', 'tobit': 'TOB', 'judith': 'JDT', 'baruch': 'BAR',
-        '1 maccabees': 'MA1', '2 maccabees': 'MA2', 'maccabees': 'MA1',
+        '1 maccabees': '1MA', '2 maccabees': '2MA', 'maccabees': '1MA',
     }
 
     # Normalize input: remove extra spaces, make lowercase

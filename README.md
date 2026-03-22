@@ -27,8 +27,8 @@ This project fetches and aggregates Catholic daily readings, saint information, 
 
 ### Data Quality
 
-- `gospel`: 0 empty texts, 0 missing names, full 2026 coverage
-- `saint`: 0 missing names; 61/365 dates have Wikipedia biography (the rest are liturgical events without a dedicated saint)
+- `gospel`: 0 empty main texts, 0 missing names, full 2026 coverage; `reading_1_text` empty for ~39 dates where the reading is from deuterocanonical books (Wisdom, Sirach) not present in KJV, or rare API misses
+- `saint`: 0 missing names; multilingual names (IT/ES/PT) corrected via Wikipedia langlinks; bios fixed via Wikipedia in target language; ~61 dates have biography
 - `liturgy_proper`: 100% date coverage; `antiphon_1` and `short_reading` always populated; `collect` NULL for 6 edge-case days
 - `prayer`: 18 prayers — Lord's Prayer, Hail Mary, Glory Be, Apostles' Creed, Angelus, Regina Coeli, Memorare, Te Deum, Divine Mercy Chaplet, Prayer of Saint Francis, Morning Prayer, Evening Prayer, Examination of Conscience, Prayer Before Confession, Prayer After Communion, Prayer for the Dead, Prayer for the Sick, Act of Contrition
 
