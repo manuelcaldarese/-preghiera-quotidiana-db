@@ -2,8 +2,8 @@
   "date": "2026-12-19",
   "name_it": "XIX dicembre",
   "name_en": "19th December",
-  "name_es": "19th December",
-  "name_pt": "19th December",
+  "name_es": "19 de diciembre",
+  "name_pt": "19 de dezembro",
   "feast_type_it": "feria",
   "feast_type_en": "ferial",
   "feast_type_es": "ferial",
@@ -11,9 +11,9 @@
   "bio_en": "",
   "wikipedia_url_en": "",
   "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/XIX_secolo",
+  "bio_es": "El 19 de diciembre es el 353.º día del año en el calendario gregoriano y el 354.º en los años bisiestos. Quedan 12 días para que finalice el año.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/19_de_diciembre",
   "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/19_de_dezembro"
 }

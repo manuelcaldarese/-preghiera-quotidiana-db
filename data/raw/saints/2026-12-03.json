@@ -1,19 +1,19 @@
 {
   "date": "2026-12-03",
-  "name_it": "Saint Francis Xavier, priest",
+  "name_it": "San Francesco Saverio, sacerdote",
   "name_en": "Saint Francis Xavier, priest",
-  "name_es": "Saint Francis Xavier, priest",
-  "name_pt": "Saint Francis Xavier, priest",
+  "name_es": "San Francisco Javier, sacerdote",
+  "name_pt": "São Francisco Xavier, presbítero",
   "feast_type_it": "memoria",
   "feast_type_en": "memorial",
   "feast_type_es": "memorial",
   "feast_type_pt": "memorial",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": "Francesca Saverio Cabrini è stata una religiosa, missionaria e educatrice italiana naturalizzata statunitense, fondatrice della congregazione delle Missionarie del Sacro Cuore di Gesù. Beatificata nel 1938, fu proclamata santa da papa Pio XII nel 1946.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Francesca_Saverio_Cabrini",
+  "bio_es": "Francisco de Jasso y Azpilcueta, más conocido como Francisco Javier, fue un religioso y misionero navarro de la Compañía de Jesús, reconocido principalmente por su labor misionera en Asia Oriental.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Francisco_Javier",
+  "bio_pt": "Francisco de Jasso y Azpilicueta, conhecido como Francisco Xavier, foi um missionário católico navarro, pioneiro e cofundador da Companhia de Jesus. A Igreja Católica Romana considera que tenha convertido mais pessoas ao Cristianismo do que qualquer outro missionário desde São Paulo, merecendo o epíteto de \"Apóstolo do Oriente\". Exerceu a sua atividade missionária no Oriente, especialmente na Índia Portuguesa e no Japão. É o padroeiro dos missionários, da Diocese de Registro, também um dos padroeiros da Diocese de Macau e é copatrono de Navarra juntamente com São Firmino de Amiens.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Francisco_Xavier"
 }

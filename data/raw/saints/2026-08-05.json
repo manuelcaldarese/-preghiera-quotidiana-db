@@ -1,19 +1,19 @@
 {
   "date": "2026-08-05",
-  "name_it": "Dedication of the Basilica of Saint Mary Major",
+  "name_it": "Dedicazione della Basilica di Santa Maria Maggiore",
   "name_en": "Dedication of the Basilica of Saint Mary Major",
-  "name_es": "Dedication of the Basilica of Saint Mary Major",
-  "name_pt": "Dedication of the Basilica of Saint Mary Major",
+  "name_es": "Dedicación de la Basílica de Santa María la Mayor",
+  "name_pt": "Dedicação da Basílica de Santa Maria Maior",
   "feast_type_it": "memoria facoltativa",
   "feast_type_en": "optional memorial",
   "feast_type_es": "optional memorial",
   "feast_type_pt": "optional memorial",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": "Nostra Signora della Neve, o Madonna della Neve, è uno dei titoli sotto cui viene invocata, specialmente in ambito cattolico, Maria, la madre di Gesù. Il titolo è legato a quello della basilica di Santa Maria ad Nives sul colle Esquilino di Roma, ritenuta il più antico santuario mariano dell'Occidente, eretta da papa Sisto III sul sito dell'antica basilica liberiana e intitolata alla Vergine, che il recente concilio di Efeso aveva solennemente proclamato \"Madre di Dio\". I festeggiamenti vengono generalmente fatti coincidere con la memoria della dedicazione della basilica di Santa Maria Maggiore, che già il martirologio geronimiano pone al 5 agosto; in tale giorno viene anche celebrato il ricordo del leggendario miracolo della nevicata che avrebbe ispirato a papa Liberio la fondazione dell'edificio sacro.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Nostra_Signora_della_Neve",
+  "bio_es": "La basílica de Santa María la Mayor, también conocida como basílica de Santa María de las Nieves y Basílica Liberiana, es una basílica católica situada en Roma, Italia. Es una de las cuatro basílicas mayores y una de las cinco basílicas patriarcales asociadas con la Pentarquía, junto a San Juan de Letrán, San Lorenzo Extramuros, San Pedro y San Pablo Extramuros. En la basílica están sepultados ocho papas, entre ellos Clemente VIII, Paulo V, Sixto V, san Pío V y Francisco.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Bas%C3%ADlica_de_Santa_Mar%C3%ADa_la_Mayor",
+  "bio_pt": "Santa Maria Maggiore ou Basílica de Santa Maria Maior é uma das quatro basílicas maiores, uma das sete igrejas de peregrinação e a maior igreja mariana de Roma — motivo pelo qual ela recebeu o epíteto de \"Maior\". Foi a primeira igreja do Ocidente dedicada a Maria em honra a Jesus Cristo, e tem uma celebração específica na liturgia católica rememorando o fato: a Dedicação de Basílica de Santa Maria Maior.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Bas%C3%ADlica_de_Santa_Maria_Maior"
 }

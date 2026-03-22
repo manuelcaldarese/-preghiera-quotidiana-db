@@ -1,19 +1,19 @@
 {
   "date": "2026-07-23",
-  "name_it": "Saint Birgitta, religious",
+  "name_it": "Santa Brigida, religiosa",
   "name_en": "Saint Birgitta, religious",
-  "name_es": "Saint Birgitta, religious",
-  "name_pt": "Saint Birgitta, religious",
+  "name_es": "Santa Brígida, religiosa",
+  "name_pt": "Santa Birgitta, religiosa",
   "feast_type_it": "memoria facoltativa",
   "feast_type_en": "optional memorial",
   "feast_type_es": "optional memorial",
   "feast_type_pt": "optional memorial",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": "Santa Brigida di Svezia, al secolo Birgitta Birgersdotter, è stata una religiosa e mistica svedese, fondatrice dell'Ordine del Santissimo Salvatore; fu proclamata santa da Bonifacio IX il 7 ottobre 1391.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Brigida_di_Svezia",
+  "bio_es": "Brígida es un nombre propio femenino de origen gaélico en su variante en español. Proviene del gaélico Brighid o Bridgid, de la raíz celta brigh (fuerza). Brighid era el nombre de una diosa céltica del fuego, muchos de cuyos atributos pasaron a Santa Brígida de Irl.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Br%C3%ADgida",
+  "bio_pt": "Brígida Birgersdotter foi uma religiosa sueca, escritora, teóloga, fundadora de sua ordem religiosa, padroeira da Suécia e copadroeira da Europa.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Br%C3%ADgida_Birgersdotter_da_Su%C3%A9cia"
 }

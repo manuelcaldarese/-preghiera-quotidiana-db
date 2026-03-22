@@ -1,19 +1,19 @@
 {
   "date": "2026-08-04",
-  "name_it": "Saint Jean Vianney (the Curé of Ars), priest",
+  "name_it": "San Giovanni Vianney (il Curato d'Ars), sacerdote",
   "name_en": "Saint Jean Vianney (the Curé of Ars), priest",
-  "name_es": "Saint Jean Vianney (the Curé of Ars), priest",
-  "name_pt": "Saint Jean Vianney (the Curé of Ars), priest",
+  "name_es": "San Juan Vianney (el Cura de Ars), sacerdote",
+  "name_pt": "São João Vianney (o Cura de Ars), sacerdote",
   "feast_type_it": "memoria",
   "feast_type_en": "memorial",
   "feast_type_es": "memorial",
   "feast_type_pt": "memorial",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": "Jean-Marie Baptiste Vianney è stato un presbitero francese, reso famoso col titolo di Curato d'Ars per la sua intensa attività di parroco in questo piccolo villaggio dell'Ain.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Giovanni_Maria_Vianney",
+  "bio_es": "Juan María Vianney, conocido como el Santo Cura de Ars, fue un presbítero francés proclamado patrono de los sacerdotes católicos, especialmente de los que tienen cura de almas (párrocos).",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Juan_Mar%C3%ADa_Vianney",
+  "bio_pt": "A Paróquia São João Maria Vianney é uma igreja localizada na Praça Cornélia, bairro da Água Branca, distrito da Lapa, Zona Oeste da cidade de São Paulo, no Estado de São Paulo.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Par%C3%B3quia_S%C3%A3o_Jo%C3%A3o_Maria_Vianney"
 }

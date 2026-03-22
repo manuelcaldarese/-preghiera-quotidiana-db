@@ -1,9 +1,9 @@
 {
   "date": "2026-09-19",
-  "name_it": "Saint Januarius, bishop and martyr",
+  "name_it": "San Gennaro, vescovo e martire",
   "name_en": "Saint Januarius, bishop and martyr",
-  "name_es": "Saint Januarius, bishop and martyr",
-  "name_pt": "Saint Januarius, bishop and martyr",
+  "name_es": "San Jenaro, obispo y mártir",
+  "name_pt": "São Januário, bispo e mártir",
   "feast_type_it": "memoria facoltativa",
   "feast_type_en": "optional memorial",
   "feast_type_es": "optional memorial",
@@ -11,9 +11,9 @@
   "bio_en": "",
   "wikipedia_url_en": "",
   "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Ottaviano_(Italia)",
+  "bio_es": "Jenaro, Genaro o Januario es un nombre propio masculino de origen latino en su variante en español. Procede de Ianuarius, «enero», mes dedicado al dios Jano. Su variante femenina es Jenara o Genara.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Jenaro_(nombre)",
+  "bio_pt": "Januário, nascido como Próculo, foi um bispo e mártir cristão, venerado como santo pela Igreja Católica e pela Igreja Ortodoxa. Foi condenado à morte no ano 305 durante as perseguições de Diocleciano. É patrono da cidade de Nápoles.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Janu%C3%A1rio_de_Benevento"
 }

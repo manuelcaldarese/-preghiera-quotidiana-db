@@ -1,19 +1,19 @@
 {
   "date": "2026-07-31",
-  "name_it": "Saint Ignatius of Loyola, priest",
+  "name_it": "Sant'Ignazio di Loyola, sacerdote",
   "name_en": "Saint Ignatius of Loyola, priest",
-  "name_es": "Saint Ignatius of Loyola, priest",
-  "name_pt": "Saint Ignatius of Loyola, priest",
+  "name_es": "San Ignacio de Loyola, sacerdote",
+  "name_pt": "Santo Inácio de Loyola, sacerdote",
   "feast_type_it": "memoria",
   "feast_type_en": "memorial",
   "feast_type_es": "memorial",
   "feast_type_pt": "memorial",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": "La Cappella della Visione di Sant'Ignazio di Loyola è una chiesa di Roma, in località La Storta.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Cappella_della_Visione_di_Sant'Ignazio_di_Loyola",
+  "bio_es": "Ignacio de Loyola fue un soldado y sacerdote español fundador de la Compañía de Jesús, de la que fue el primer general. En esta orden se profesan los votos habituales de pobreza, castidad y obediencia además de otro especial de obediencia al papa. La Compañía de Jesús tuvo un importante papel durante la Contrarreforma.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Ignacio_de_Loyola",
+  "bio_pt": "Inácio de Loyola, nascido Iñigo López de Oñaz y Loyola, foi o fundador da Companhia de Jesus, uma ordem religiosa católica romana que teve grande importância na Reforma Católica, cujos membros são conhecidos como os jesuítas. Em 2009, a Companhia de Jesus era a ordem religiosa masculina mais numerosa na Igreja Católica.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/In%C3%A1cio_de_Loyola"
 }

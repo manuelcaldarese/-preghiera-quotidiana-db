@@ -1,19 +1,19 @@
 {
   "date": "2026-10-22",
-  "name_it": "Saint John Paul II, pope",
+  "name_it": "San Giovanni Paolo II, papa",
   "name_en": "Saint John Paul II, pope",
-  "name_es": "Saint John Paul II, pope",
-  "name_pt": "Saint John Paul II, pope",
+  "name_es": "San Juan Pablo II, papa",
+  "name_pt": "São João Paulo II, papa",
   "feast_type_it": "memoria facoltativa",
   "feast_type_en": "optional memorial",
   "feast_type_es": "optional memorial",
   "feast_type_pt": "optional memorial",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": "San Papa Giovanni Paolo II è stato il 264º papa della Chiesa cattolica e vescovo di Roma, 6º sovrano dello Stato della Città del Vaticano, oltre agli altri titoli propri del romano pontefice, dal 16 ottobre 1978 fino alla morte.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Papa_Giovanni_Paolo_II",
+  "bio_es": "Juan Pablo II, de nombre secular Karol Józef Wojtyła, fue el 264.° papa de la Iglesia católica y el sexto soberano de la Ciudad del Vaticano desde el 16 de octubre de 1978 hasta su muerte en 2005. Fue canonizado en 2014, durante el pontificado de Francisco, lo que lo convierte en santo de la Iglesia católica.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Juan_Pablo_II",
+  "bio_pt": "João Paulo II ou São João Paulo II, Magno (em polonês/polaco: Jan Paweł II; em latim: Ioannes Paulus II), nascido Karol Józef Wojtyła; foi o Papa da Igreja Católica, Bispo de Roma e Soberano da Cidade do Vaticano de 16 de outubro de 1978 até a data de sua morte. Teve o terceiro Pontificado mais longo da história, durando 26 anos, 5 meses e 17 dias, depois dos Papas São Pedro, cujo Pontificado durou cerca de 36 anos, e Pio IX, que Pontificou por 31 anos. Foi o único Papa eslavo e polaco e o primeiro Papa não italiano desde o neerlandês Adriano VI, em 1522.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Papa_Jo%C3%A3o_Paulo_II"
 }

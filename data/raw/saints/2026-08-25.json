@@ -1,19 +1,19 @@
 {
   "date": "2026-08-25",
-  "name_it": "Saint Louis",
+  "name_it": "San Luigi",
   "name_en": "Saint Louis",
-  "name_es": "Saint Louis",
-  "name_pt": "Saint Louis",
+  "name_es": "San Luis",
+  "name_pt": "São Luís",
   "feast_type_it": "memoria facoltativa",
   "feast_type_en": "optional memorial",
   "feast_type_es": "optional memorial",
   "feast_type_pt": "optional memorial",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
+  "bio_it": "Luigi IX di Francia, conosciuto semplicemente come San Luigi, Luigi il Santo o San Luigi dei Francesi, è stato il quarantaquattresimo re di Francia, nono della dinastia capetingia, dal 1226 fino alla sua morte.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Luigi_IX_di_Francia",
+  "bio_es": "San Luis Potosí es una ciudad mexicana, siendo esta la capital y ciudad más poblada del estado de San Luis Potosí y la cabecera del municipio homónimo. Se encuentra ubicada en el poniente del estado en la llamada Zona centro y es sede de los poderes ejecutivo, legislativo y judicial del estado. Tiene una altitud media de 1,860 m s. n. m. Desde 2024, la mancha urbana colinda con los municipios de Soledad de Graciano Sánchez, Villa de Pozos y Mexquitic de Carmona.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/San_Luis_Potos%C3%AD_(M%C3%A9xico)",
   "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/S%C3%A3o_Lu%C3%ADs_(Maranh%C3%A3o)"
 }

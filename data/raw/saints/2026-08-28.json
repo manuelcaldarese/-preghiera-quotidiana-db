@@ -1,19 +1,19 @@
 {
   "date": "2026-08-28",
-  "name_it": "Saint Augustine of Hippo, bishop and doctor of the Church",
+  "name_it": "Sant'Agostino d'Ippona, vescovo e dottore della Chiesa",
   "name_en": "Saint Augustine of Hippo, bishop and doctor of the Church",
-  "name_es": "Saint Augustine of Hippo, bishop and doctor of the Church",
-  "name_pt": "Saint Augustine of Hippo, bishop and doctor of the Church",
+  "name_es": "San Agustín de Hipona, obispo y doctor de la Iglesia",
+  "name_pt": "Santo Agostinho de Hipona, bispo e doutor da Igreja",
   "feast_type_it": "memoria",
   "feast_type_en": "memorial",
   "feast_type_es": "memorial",
   "feast_type_pt": "memorial",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": "Aurelio Agostino d'Ippona è stato un filosofo, vescovo, teologo, monaco e mistico romano.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Agostino_d'Ippona",
+  "bio_es": "Agustín de Hipona o Aurelio Agustín de Hipona, conocido también como san Agustín, fue un escritor, teólogo y filósofo cristiano. Después de su conversión, fue obispo de Hipona, en el norte de África, desde donde dirigió una serie de luchas contra las herejías de los maniqueos, los donatistas y el pelagianismo.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Agust%C3%ADn_de_Hipona",
+  "bio_pt": "Aurélio Agostinho de Hipona, conhecido universalmente como Santo Agostinho, foi um dos mais importantes teólogos e filósofos nos primeiros séculos do cristianismo, cujas obras foram muito influentes no desenvolvimento do cristianismo e filosofia ocidental. Foi bispo de Hipona, uma cidade na província romana da África. Escrevendo na era patrística, é amplamente considerado como o mais importante dos Padres da Igreja no ocidente. Suas obras-primas são De Civitate Dei e \"Confissões\", ambas ainda muito estudadas atualmente.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Agostinho_de_Hipona"
 }

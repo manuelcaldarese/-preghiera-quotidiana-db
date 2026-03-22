@@ -1,19 +1,19 @@
 {
   "date": "2026-12-26",
-  "name_it": "Saint Stephen, the first martyr",
+  "name_it": "Santo Stefano, il primo martire",
   "name_en": "Saint Stephen, the first martyr",
-  "name_es": "Saint Stephen, the first martyr",
-  "name_pt": "Saint Stephen, the first martyr",
+  "name_es": "San Esteban, el primer mártir",
+  "name_pt": "Santo Estêvão, o primeiro mártir",
   "feast_type_it": "festa",
   "feast_type_en": "feast",
   "feast_type_es": "feast",
   "feast_type_pt": "feast",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": "Stefano è stato il primo dei sette diaconi scelti dalla comunità cristiana perché aiutassero gli apostoli nel ministero della fede.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Stefano_protomartire",
+  "bio_es": "Esteban es venerado tradicionalmente como el protomártir o primer mártir del cristianismo. fue un diácono de la Iglesia primitiva de Jerusalén. Se granjeó la enemistad de varias sinagogas por sus enseñanzas. En su juicio, Esteban dio un largo discurso criticando a las autoridades judías que le juzgaban. Fue condenado a la lapidación. Su martirio fue contemplado por Saulo de Tarso, un fariseo conocido de Simón Pedro.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Esteban_(m%C3%A1rtir)",
+  "bio_pt": "Estêvão é o primeiro mártir do cristianismo, sendo considerado santo por algumas das denominações cristãs. É celebrado em 26 de Dezembro no Ocidente e em 27 de Dezembro no Oriente por tais denominações. Ele também está listado entre os Setenta Discípulos.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Est%C3%AAv%C3%A3o_(m%C3%A1rtir)"
 }

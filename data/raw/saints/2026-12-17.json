@@ -2,8 +2,8 @@
   "date": "2026-12-17",
   "name_it": "XVII dicembre",
   "name_en": "17th December",
-  "name_es": "17th December",
-  "name_pt": "17th December",
+  "name_es": "17 de diciembre",
+  "name_pt": "17 de dezembro",
   "feast_type_it": "feria",
   "feast_type_en": "ferial",
   "feast_type_es": "ferial",
@@ -11,9 +11,9 @@
   "bio_en": "",
   "wikipedia_url_en": "",
   "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/XVII_secolo",
+  "bio_es": "El 17 de diciembre es el 351.º día del año en el calendario gregoriano y el 352.º en los años bisiestos. Quedan 14 días para finalizar el año.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/17_de_diciembre",
   "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/17_de_dezembro"
 }

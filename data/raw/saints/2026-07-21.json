@@ -1,19 +1,19 @@
 {
   "date": "2026-07-21",
-  "name_it": "Saint Lawrence of Brindisi, priest and doctor",
+  "name_it": "San Lorenzo da Brindisi, sacerdote e dottore",
   "name_en": "Saint Lawrence of Brindisi, priest and doctor",
-  "name_es": "Saint Lawrence of Brindisi, priest and doctor",
-  "name_pt": "Saint Lawrence of Brindisi, priest and doctor",
+  "name_es": "San Lorenzo de Brindisi, sacerdote y médico",
+  "name_pt": "São Lourenço de Brindisi, sacerdote e médico",
   "feast_type_it": "memoria facoltativa",
   "feast_type_en": "optional memorial",
   "feast_type_es": "optional memorial",
   "feast_type_pt": "optional memorial",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
+  "bio_it": "Lorenzo da Brindisi, al secolo Giulio Cesare Russo o de Rossi, è stato un presbitero, teologo e santo italiano appartenente all'Ordine dei frati minori cappuccini. Proclamato santo da papa Leone XIII nel 1881, nel 1959 venne annoverato tra i Dottori della Chiesa.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Lorenzo_da_Brindisi",
+  "bio_es": "Doctor de la Iglesia o Doctor de la Iglesia Universal es un título otorgado por la Iglesia católica, a través del papa o un concilio ecuménico, a ciertos santos en razón de su erudición y en reconocimiento por su contribución significativa a la teología o la doctrina a través de su investigación, estudio o escritos, lo que los constituye como eminentes maestros de la fe para los fieles de todos los tiempos.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Doctor_de_la_Iglesia",
   "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/21_de_julho"
 }

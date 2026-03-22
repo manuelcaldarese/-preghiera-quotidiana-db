@@ -2,8 +2,8 @@
   "date": "2026-12-21",
   "name_it": "XXI dicembre",
   "name_en": "21st December",
-  "name_es": "21st December",
-  "name_pt": "21st December",
+  "name_es": "21 de diciembre",
+  "name_pt": "21 de dezembro",
   "feast_type_it": "feria",
   "feast_type_en": "ferial",
   "feast_type_es": "ferial",
@@ -11,9 +11,9 @@
   "bio_en": "",
   "wikipedia_url_en": "",
   "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/XXI_secolo",
+  "bio_es": "El 21 de diciembre es el 355.º día del año en el calendario gregoriano y el 356.º en los años bisiestos. Quedan 10 días para finalizar el año.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/21_de_diciembre",
   "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/21_de_dezembro"
 }

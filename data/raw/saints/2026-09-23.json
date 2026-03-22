@@ -1,19 +1,19 @@
 {
   "date": "2026-09-23",
-  "name_it": "Saint Pio of Pietrelcina (Padre Pio), priest",
+  "name_it": "San Pio da Pietrelcina (Padre Pio), sacerdote",
   "name_en": "Saint Pio of Pietrelcina (Padre Pio), priest",
-  "name_es": "Saint Pio of Pietrelcina (Padre Pio), priest",
-  "name_pt": "Saint Pio of Pietrelcina (Padre Pio), priest",
+  "name_es": "San Pío de Pietrelcina (Padre Pío), sacerdote",
+  "name_pt": "São Pio de Pietrelcina (Padre Pio), sacerdote",
   "feast_type_it": "memoria",
   "feast_type_en": "memorial",
   "feast_type_es": "memorial",
   "feast_type_pt": "memorial",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": "Padre Pio da Pietrelcina, detto anche solo Padre Pio, è stato un presbitero, mistico e religioso italiano, membro dell'Ordine dei Frati Minori cappuccini.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Pio_da_Pietrelcina",
+  "bio_es": "Pío de Pietrelcina, nacido como Francesco Forgione, conocido como el padre Pío, al ingresar como fraile, en la Orden de los Hermanos Menores Capuchinos; fue un sacerdote católico italiano, famoso por sus dones milagrosos y por los estigmas que presentaba en manos, pies y costado. Fue beatificado en 1999 y canonizado en 2002 por el papa Juan Pablo II.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/P%C3%ADo_de_Pietrelcina",
+  "bio_pt": "Padre Pio de Pietrelcina, nascido Francesco Forgione, O.F.M. Cap. foi um frade capuchinho e sacerdote católico italiano, elevado aos altares pela Igreja Católica em 2002, quando foi canonizado pelo Papa São João Paulo II com o título de São Pio de Pietrelcina.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Padre_Pio"
 }

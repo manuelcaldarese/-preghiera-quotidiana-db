@@ -1,9 +1,9 @@
 {
   "date": "2026-07-20",
-  "name_it": "Saint Apollinaris, bishop and martyr",
+  "name_it": "Sant'Apollinare, vescovo e martire",
   "name_en": "Saint Apollinaris, bishop and martyr",
-  "name_es": "Saint Apollinaris, bishop and martyr",
-  "name_pt": "Saint Apollinaris, bishop and martyr",
+  "name_es": "San Apolinar, obispo y mártir",
+  "name_pt": "Santo Apolinário, bispo e mártir",
   "feast_type_it": "memoria facoltativa",
   "feast_type_en": "optional memorial",
   "feast_type_es": "optional memorial",
@@ -11,9 +11,9 @@
   "bio_en": "",
   "wikipedia_url_en": "",
   "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Chiesa_di_Sant'Apollinare_Vescovo_e_Martire_(Tresignana)",
+  "bio_es": "San Apolinar fue el primer obispo y mártir de la ciudad de Rávena y es su santo patrón.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Apolinar_de_R%C3%A1vena",
+  "bio_pt": "O Calendário Romano Geral indica a celebração litúrgica assinada a cada dia do ano na Santa Missa e na Liturgia das Horas do rito romano, a menos que num determinado lugar o respetivo Calendário particular, baseado no romano geral, tenha introduzido uma variação.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Calend%C3%A1rio_Romano_Geral"
 }

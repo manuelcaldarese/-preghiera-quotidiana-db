@@ -1,19 +1,19 @@
 {
   "date": "2026-11-04",
-  "name_it": "Saint Charles Borromeo, bishop",
+  "name_it": "San Carlo Borromeo, vescovo",
   "name_en": "Saint Charles Borromeo, bishop",
-  "name_es": "Saint Charles Borromeo, bishop",
-  "name_pt": "Saint Charles Borromeo, bishop",
+  "name_es": "San Carlos Borromeo, obispo",
+  "name_pt": "São Carlos Borromeu, bispo",
   "feast_type_it": "memoria",
   "feast_type_en": "memorial",
   "feast_type_es": "memorial",
   "feast_type_pt": "memorial",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": "Carlo Borromeo è stato un cardinale e arcivescovo cattolico italiano. Fu proclamato santo da papa Paolo V nel 1610, a soli 26 anni dalla morte, ed è considerato tra i massimi riformatori della Chiesa cattolica nel XVI secolo, anima e guida della Controriforma cristiana cattolica, nonché persecutore di protestanti evangelici. Tra le maggiori riforme da lui proposte e accettate dal Concilio di Trento, vi fu l'istituzione dei seminari per la formazione e l'educazione dei presbiteri.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Carlo_Borromeo",
+  "bio_es": "San Carlos Borromeo fue un cardenal italiano y arzobispo de Milán, y uno de los grandes reformadores católicos de la época postridentina. Era sobrino del papa Pío IV y la Iglesia católica lo venera como santo.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Carlos_Borromeo",
+  "bio_pt": "São Carlos Borromeu foi um Cardeal italiano e Arcebispo de Milão, sendo o primeiro bispo a fundar seminários para a formação dos futuros padres; promoveu sínodos diocesanos; abundou os escritos catequéticos e conhecimento da doutrina católica.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Carlos_Borromeu"
 }

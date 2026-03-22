@@ -1,9 +1,9 @@
 {
   "date": "2026-09-30",
-  "name_it": "Saint Jerome, priest and doctor",
+  "name_it": "San Girolamo, sacerdote e dottore",
   "name_en": "Saint Jerome, priest and doctor",
-  "name_es": "Saint Jerome, priest and doctor",
-  "name_pt": "Saint Jerome, priest and doctor",
+  "name_es": "San Jerónimo, sacerdote y médico",
+  "name_pt": "São Jerônimo, sacerdote e médico",
   "feast_type_it": "memoria",
   "feast_type_en": "memorial",
   "feast_type_es": "memorial",
@@ -11,9 +11,9 @@
   "bio_en": "",
   "wikipedia_url_en": "",
   "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Chiesa_di_San_Girolamo_Sacerdote_e_Dottore_della_Chiesa",
+  "bio_es": "Jerónimo de Alcalá Yáñez y Ribera fue un médico y escritor español, autor de la novela picaresca Alonso, mozo de muchos amos, denominada también El donado hablador, y de otras obras de fondo religioso.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Jer%C3%B3nimo_de_Alcal%C3%A1",
+  "bio_pt": "Cavalcanti é um apelido de família de remota origem italiana com origens na idade mesomedieval no Sacro Império. A grafia Cavalcante, também comum, é uma tentativa de aportuguesamento.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Fam%C3%ADlia_Cavalcanti"
 }

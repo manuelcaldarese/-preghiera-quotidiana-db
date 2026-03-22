@@ -1,19 +1,19 @@
 {
   "date": "2026-08-19",
-  "name_it": "Saint John Eudes, priest",
+  "name_it": "San Giovanni Eudes, sacerdote",
   "name_en": "Saint John Eudes, priest",
-  "name_es": "Saint John Eudes, priest",
-  "name_pt": "Saint John Eudes, priest",
+  "name_es": "San Juan Eudes, sacerdote",
+  "name_pt": "São João Eudes, presbítero",
   "feast_type_it": "memoria facoltativa",
   "feast_type_en": "optional memorial",
   "feast_type_es": "optional memorial",
   "feast_type_pt": "optional memorial",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": "Giovanni Eudes, nome italianizzato di Jean Eudes, è stato un religioso francese, fondatore della Congregazione di Gesù e Maria (eudisti), dell'Ordine di Nostra Signora della Carità del Rifugio e della Società del Cuore della Madre Ammirabile. Beatificato da papa Pio X nel 1909, è stato canonizzato nel 1925 da papa Pio XI.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Giovanni_Eudes",
+  "bio_es": "San Juan Eudes, en francés Jean Eudes, fue un sacerdote misionero francés, fundador de la Congregación de Jesús y María (Eudistas) y de la Orden de Nuestra Señora de la Caridad del Refugio, y autor del culto litúrgico del Sagrado Corazón de Jesús y del Corazón de María, la Santísima Madre de Dios. Eudes fue un defensor de los Sagrados Corazones y promovió esta devoción. Predicó misiones en toda Francia, incluidas París y Versalles, al tiempo que obtuvo el reconocimiento como evangelista y confesor popular. Eudes fue también un escritor prolífico y escribió sobre los Sagrados Corazones a pesar de la oposición de los jansenistas.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Juan_Eudes",
+  "bio_pt": "João Eudes, C.J.M. foi um presbítero francês, sendo venerado como santo pela Igreja Católica.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Eudes"
 }

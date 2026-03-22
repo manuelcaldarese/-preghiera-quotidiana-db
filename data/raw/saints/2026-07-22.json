@@ -1,19 +1,19 @@
 {
   "date": "2026-07-22",
-  "name_it": "Saint Mary Magdalene",
+  "name_it": "Santa Maria Maddalena",
   "name_en": "Saint Mary Magdalene",
-  "name_es": "Saint Mary Magdalene",
-  "name_pt": "Saint Mary Magdalene",
+  "name_es": "Santa María Magdalena",
+  "name_pt": "Santa Maria Madalena",
   "feast_type_it": "festa",
   "feast_type_en": "feast",
   "feast_type_es": "feast",
   "feast_type_pt": "feast",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": "Maria Maddalena, detta anche Maria di Magdala, è stata, secondo il Nuovo Testamento, una discepola di Gesù.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Maria_Maddalena",
+  "bio_es": "María Magdalena es mencionada, tanto en el Nuevo Testamento canónico como en varios evangelios apócrifos, como una distinguida discípula de Jesús de Nazaret. Su nombre hace referencia a su lugar de procedencia: Magdala, localidad situada en la costa occidental del lago de Tiberíades y aldea cercana a Cafarnaúm.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Mar%C3%ADa_Magdalena",
+  "bio_pt": "Maria de Magdala, mais conhecida como Maria Madalena, ou somente Madalena foi uma discípula de Jesus Cristo que ocupa lugar de grande destaque nos Evangelhos canônicos. Segundo o testemunho concorde dos quatro evangelistas, ela seguiu Jesus durante o seu ministério público, esteve presente em momentos centrais da sua Paixão e foi testemunha direta da Crucificação, do sepultamento e da Ressurreição. O epíteto “Madalena” é geralmente entendido como um topônimo, indicando sua origem na cidade de Magdala, uma vila de pescadores situada na costa ocidental do mar da Galileia, na Judeia romana.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Maria_Madalena"
 }

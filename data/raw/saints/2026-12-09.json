@@ -1,19 +1,19 @@
 {
   "date": "2026-12-09",
-  "name_it": "Saint Juan Diego",
+  "name_it": "San Juan Diego",
   "name_en": "Saint Juan Diego",
-  "name_es": "Saint Juan Diego",
-  "name_pt": "Saint Juan Diego",
+  "name_es": "San Juan Diego",
+  "name_pt": "São João Diego",
   "feast_type_it": "memoria facoltativa",
   "feast_type_en": "optional memorial",
   "feast_type_es": "optional memorial",
   "feast_type_pt": "optional memorial",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": "Juan Diego, nato Cuauhtlatoatzin, è stato un azteco convertito al Cristianesimo che, secondo la tradizione, ricevette nel 1531 l'apparizione della Madonna di Guadalupe. È stato proclamato santo da papa Giovanni Paolo II nel 2002.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Juan_Diego_Cuauhtlatoatzin",
+  "bio_es": "Juan Diego Cuauhtlatoatzin fue un campesino chichimeca. De acuerdo a la tradición católica, fue el indígena novohispano que presenció la aparición mariana de la Virgen de Guadalupe en 1531. Fue beatificado en 1990 y canonizado en 2002, en ambos casos por el papa Juan Pablo II. Juan Diego es el primer santo indígena de América y el tercer santo de México en ser canonizado tras San Felipe de Jesús y el grupo de 25 mártires de la Guerra Cristera.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Juan_Diego_Cuauhtlatoatzin",
+  "bio_pt": "Diego de Souza Andrade é um ex-futebolista brasileiro que atuava como meio-campista ou centroavante.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Diego_Souza"
 }

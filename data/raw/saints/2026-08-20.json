@@ -1,19 +1,19 @@
 {
   "date": "2026-08-20",
-  "name_it": "Saint Bernard of Clairvaux, abbot and doctor of the Church",
+  "name_it": "San Bernardo di Chiaravalle, abate e dottore della Chiesa",
   "name_en": "Saint Bernard of Clairvaux, abbot and doctor of the Church",
-  "name_es": "Saint Bernard of Clairvaux, abbot and doctor of the Church",
-  "name_pt": "Saint Bernard of Clairvaux, abbot and doctor of the Church",
+  "name_es": "San Bernardo de Claraval, abad y doctor de la Iglesia",
+  "name_pt": "São Bernardo de Claraval, abade e doutor da Igreja",
   "feast_type_it": "memoria",
   "feast_type_en": "memorial",
   "feast_type_es": "memorial",
   "feast_type_pt": "memorial",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": "Bernardo di Chiaravalle, in latino Bernardus Claravallensis, è stato un monaco cristiano, abate e teologo francese dell'ordine cistercense, fondatore della celebre abbazia di Clairvaux, di cui fu abate, e di altri monasteri.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Bernardo_di_Chiaravalle",
+  "bio_es": "Bernardo de Fontaine, O.Cist., conocido como Bernardo de Claraval, fue un monje cisterciense francés, abad de la abadía de Claraval.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Bernardo_de_Claraval",
+  "bio_pt": "Bernardo de Claraval foi um abade francês, canonizado em 1174 e proclamado Doutor da Igreja. Foi o principal responsável por reformar a Ordem de Cister, na qual entrou logo depois da morte de sua mãe. Foi o fundador da Abadia de Claraval (Clairvaux), na Diocese de Langres.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Bernardo_de_Claraval"
 }

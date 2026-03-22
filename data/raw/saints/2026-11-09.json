@@ -1,19 +1,19 @@
 {
   "date": "2026-11-09",
-  "name_it": "Dedication of the Lateran basilica",
+  "name_it": "Dedicazione della Basilica Lateranense",
   "name_en": "Dedication of the Lateran basilica",
-  "name_es": "Dedication of the Lateran basilica",
-  "name_pt": "Dedication of the Lateran basilica",
+  "name_es": "Dedicación de la basílica de Letrán",
+  "name_pt": "Dedicação da basílica de Latrão",
   "feast_type_it": "festa",
   "feast_type_en": "feast",
   "feast_type_es": "feast",
   "feast_type_pt": "feast",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
+  "bio_it": "La dedicazione della basilica lateranense è la festa che commemora la consacrazione a Cristo Salvatore della chiesa cattedrale dei vescovi di Roma.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Dedicazione_della_basilica_lateranense",
+  "bio_es": "La Catedral Archibasílica Papal del Santísimo Salvador del Mundo y de los Santos Juan Bautista y Juan Evangelista en Letrán, Madre y Cabeza de todas las Iglesias de la Ciudad y el Mundo, más conocida como Archibasílica de San Juan de Letrán, es la Catedral de la diócesis de Roma, Italia, donde se encuentra la sede episcopal del Obispo de Roma. Está dedicada a Cristo Salvador, sin embargo es más conocida con el nombre de San Juan, por estar también dedicada a los dos santos principales que llevan este nombre.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Archibas%C3%ADlica_de_San_Juan_de_Letr%C3%A1n",
   "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Arquibas%C3%ADlica_de_S%C3%A3o_Jo%C3%A3o_de_Latr%C3%A3o"
 }

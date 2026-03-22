@@ -1,9 +1,9 @@
 {
   "date": "2026-08-01",
-  "name_it": "Saint Alphonsus Maria de Liguori, bishop and doctor of the Church",
+  "name_it": "Sant'Alfonso Maria de Liguori, vescovo e dottore della Chiesa",
   "name_en": "Saint Alphonsus Maria de Liguori, bishop and doctor of the Church",
-  "name_es": "Saint Alphonsus Maria de Liguori, bishop and doctor of the Church",
-  "name_pt": "Saint Alphonsus Maria de Liguori, bishop and doctor of the Church",
+  "name_es": "San Alfonso María de Ligorio, obispo y doctor de la Iglesia",
+  "name_pt": "Santo Afonso Maria de Ligório, bispo e doutor da Igreja",
   "feast_type_it": "memoria",
   "feast_type_en": "memorial",
   "feast_type_es": "memorial",
@@ -11,9 +11,9 @@
   "bio_en": "",
   "wikipedia_url_en": "",
   "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Pagani_(Italia)",
+  "bio_es": "Alfonso María de Ligorio, C.Ss.R., fue un sacerdote y obispo católico, escritor y fundador de los Redentoristas. Considerado como santo por la Iglesia Católica y su fiesta litúrgica se celebra el 1 de agosto.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Alfonso_Mar%C3%ADa_de_Ligorio",
+  "bio_pt": "Afonso Maria de Ligório, C.Ss.R., nascido Afonso Maria Antônio João Francisco Cosme Damião Miguel Ângelo Gaspar de Ligório, foi um bispo católico italiano que se destacou como escritor espiritual, filósofo escolástico e teólogo.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Afonso_de_Lig%C3%B3rio"
 }

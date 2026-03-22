@@ -1,9 +1,9 @@
 {
   "date": "2026-12-04",
-  "name_it": "Saint John Damascene, priest and doctor",
+  "name_it": "San Giovanni Damasceno, sacerdote e dottore",
   "name_en": "Saint John Damascene, priest and doctor",
-  "name_es": "Saint John Damascene, priest and doctor",
-  "name_pt": "Saint John Damascene, priest and doctor",
+  "name_es": "San Juan Damasceno, sacerdote y médico",
+  "name_pt": "São João Damasceno, sacerdote e médico",
   "feast_type_it": "memoria facoltativa",
   "feast_type_en": "optional memorial",
   "feast_type_es": "optional memorial",
@@ -11,9 +11,9 @@
   "bio_en": "",
   "wikipedia_url_en": "",
   "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Giovanni_(nome)",
+  "bio_es": "Doctor de la Iglesia o Doctor de la Iglesia Universal es un título otorgado por la Iglesia católica, a través del papa o un concilio ecuménico, a ciertos santos en razón de su erudición y en reconocimiento por su contribución significativa a la teología o la doctrina a través de su investigación, estudio o escritos, lo que los constituye como eminentes maestros de la fe para los fieles de todos los tiempos.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Doctor_de_la_Iglesia",
   "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/16_de_mar%C3%A7o"
 }

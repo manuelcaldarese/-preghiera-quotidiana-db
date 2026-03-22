@@ -1,19 +1,19 @@
 {
   "date": "2026-08-27",
-  "name_it": "Saint Monica",
+  "name_it": "Santa Monica",
   "name_en": "Saint Monica",
-  "name_es": "Saint Monica",
-  "name_pt": "Saint Monica",
+  "name_es": "Santa Mónica",
+  "name_pt": "Santa Mônica",
   "feast_type_it": "memoria",
   "feast_type_en": "memorial",
   "feast_type_es": "memorial",
   "feast_type_pt": "memorial",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": "Monica è stata la madre di Agostino d'Ippona; è venerata come santa dalla Chiesa cattolica, che la ricorda il 27 agosto o il 4 maggio.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Santa_Monica",
+  "bio_es": "Santa Mónica es una ciudad situada en el condado de Los Ángeles, California, Estados Unidos. Tiene una población estimada, a mediados de 2023, de 89 922 habitantes.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Santa_M%C3%B3nica_(California)",
+  "bio_pt": "Santa Mônica (português brasileiro) ou Santa Mónica (português europeu) (331–387) é a mãe de Santo Agostinho de Hipona e uma santa cristã. A sua festa realiza-se em 27 de agosto.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/M%C3%B4nica_de_Hipona"
 }

@@ -1,19 +1,19 @@
 {
   "date": "2026-09-21",
-  "name_it": "Saint Matthew the Evangelist, Apostle, Evangelist",
+  "name_it": "San Matteo Evangelista, Apostolo, Evangelista",
   "name_en": "Saint Matthew the Evangelist, Apostle, Evangelist",
-  "name_es": "Saint Matthew the Evangelist, Apostle, Evangelist",
-  "name_pt": "Saint Matthew the Evangelist, Apostle, Evangelist",
+  "name_es": "San Mateo Evangelista, Apóstol, Evangelista",
+  "name_pt": "São Mateus Evangelista, Apóstolo, Evangelista",
   "feast_type_it": "festa",
   "feast_type_en": "feast",
   "feast_type_es": "feast",
   "feast_type_pt": "feast",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": "San Marco evangelista è stato un discepolo dell'apostolo Paolo e, in seguito, di Pietro. Secondo la tradizione cristiana, è ritenuto l'autore del Vangelo secondo Marco. È venerato come santo da varie Chiese cristiane, tra cui quella cattolica, quella ortodossa e la copta, che lo considera proprio patriarca e primo vescovo di Alessandria.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Marco_(evangelista)",
+  "bio_es": "Mateo el Evangelista, en hebreo מתיו הקדוש, fue uno de los doce apóstoles elegidos por Jesús de Nazaret. La tradición cristiana y la mayoría de documentos primarios históricos escritos en el mismo siglo, le atribuyen la autoría del Evangelio de Mateo, escrito originalmente en arameo. Alguna crítica secundaria actual relativiza esta atribución, al menos respecto al texto que nos ha llegado como tal, pero más probablemente el libro de Mateo fue compilado por el apóstol unos años después de dichos sucesos usando notas escritas en arameo.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Mateo_el_Evangelista",
+  "bio_pt": "Apóstolo Mateus, também chamado de São Mateus ou Mateus, o Evangelista, foi um dos doze apóstolos de Jesus Cristo e é reconhecido como autor do Evangelho segundo Mateus, um dos quatro Evangelhos canônicos. Originalmente conhecido como Levi, filho de Alfeu, exercia a profissão de publicano, isto é, cobrador de impostos para o Império Romano, função considerada impura e desprezada pelos judeus de sua época. Segundo os Evangelhos, foi chamado por Jesus enquanto trabalhava em sua coletoria em Cafarnaum, ocasião em que deixou tudo imediatamente para segui-Lo.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Mateus%2C_o_Evangelista"
 }

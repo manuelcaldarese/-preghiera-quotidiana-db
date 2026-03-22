@@ -1,19 +1,19 @@
 {
   "date": "2026-11-03",
-  "name_it": "Saint Martin de Porres, religious",
+  "name_it": "San Martino de Porres, religioso",
   "name_en": "Saint Martin de Porres, religious",
-  "name_es": "Saint Martin de Porres, religious",
-  "name_pt": "Saint Martin de Porres, religious",
+  "name_es": "San Martín de Porres, religioso",
+  "name_pt": "São Martinho de Porres, religioso",
   "feast_type_it": "memoria facoltativa",
   "feast_type_en": "optional memorial",
   "feast_type_es": "optional memorial",
   "feast_type_pt": "optional memorial",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": "San Martín de Porres Velázquez, o de Porras Velázquez, è stato un religioso peruviano dell'ordine dei Domenicani. Fu il primo santo mulatto delle Americhe. È popolarmente conosciuto anche come \"Martino della Carità\" e \"santo della scopa\" per via del fatto che è spesso rappresentato con una scopa in mano, simbolo della sua umiltà. Beatificato da papa Gregorio XVI nel 1837, fu canonizzato da papa Giovanni XXIII nel 1962.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Martino_de_Porres",
+  "bio_es": "San Martín de Porres Velázquez o Martín de Porras, de nombre secular Juan Martín de Porres Velázquez, fue un fraile nacido en el virreinato del Perú, de la orden de los dominicos. Fue el primer santo mulato de América. Es conocido también como el santo de la escoba por ser representado con una escoba en la mano como símbolo de su humildad.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Mart%C3%ADn_de_Porres",
+  "bio_pt": "Martinho de Porres, ou Martinho de Lima, foi um religioso e santo peruano. É considerado o padroeiro dos barbeiros e dos mestiços católicos. A sua festa litúrgica é celebrada em 3 de novembro.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Martinho_de_Porres"
 }

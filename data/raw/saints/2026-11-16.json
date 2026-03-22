@@ -1,19 +1,19 @@
 {
   "date": "2026-11-16",
-  "name_it": "Saint Margaret of Scotland",
+  "name_it": "Santa Margherita di Scozia",
   "name_en": "Saint Margaret of Scotland",
-  "name_es": "Saint Margaret of Scotland",
-  "name_pt": "Saint Margaret of Scotland",
+  "name_es": "Santa Margarita de Escocia",
+  "name_pt": "Santa Margarida da Escócia",
   "feast_type_it": "memoria facoltativa",
   "feast_type_en": "optional memorial",
   "feast_type_es": "optional memorial",
   "feast_type_pt": "optional memorial",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": "Santa Margherita di Scozia era figlia del principe Edoardo e nipote di Edmondo II e sorella di Edgardo Atheling, erede al trono d'Inghilterra.\nÈ venerata come santa dalla Chiesa cattolica. Margherita nacque in esilio in Ungheria e con la famiglia tornò in Inghilterra nel 1057 per fuggire in Scozia a seguito della Conquista normanna dell'Inghilterra nel 1066. Nel 1070 circa sposò Malcolm III di Scozia divenendone la Regina consorte. Donna pia Margherita istitutì un traghetto perché i pellegrini potessero attraversare il Firth of Forth mentre si dirigevano all'Abbazia di Dunfermline e i locali villaggi di South Queensferry e North Queensferry devono a lei il loro nome. Margherita fu la madre di tre re di Scozia e di una regina d'Inghilterra e la tradizione vuole che sia morta al Castello di Edimburgo il 16 novembre 1093, poco dopo avere avuto notizia della morte del marito in battaglia. Margherita venne canonizzata nel 1250 per volere del papa Innocenzo IV e i suoi resti vennero posti nell'Abbazia di Dunfermline, tuttavia dopo la Riforma scozzese di essi si perse ogni traccia.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Margherita_di_Scozia_(santa)",
+  "bio_es": "Santa Margarita era la hermana de Edgar Atheling, el heredero anglosajón a la corona de Inglaterra. Contrajo matrimonio con Malcolm III de Escocia, y se convirtió en su reina consorte.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Margarita_de_Escocia_(santa)",
+  "bio_pt": "Margarida da Escócia ou Margarida de Wessex, foi rainha consorte da Escócia como esposa de Malcolm III da Escócia. É venerada santa da Igreja Católica.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Margarida_da_Esc%C3%B3cia_(santa)"
 }

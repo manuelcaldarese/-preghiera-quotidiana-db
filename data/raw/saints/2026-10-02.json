@@ -1,19 +1,19 @@
 {
   "date": "2026-10-02",
-  "name_it": "Guardian Angels",
+  "name_it": "Angeli custodi",
   "name_en": "Guardian Angels",
-  "name_es": "Guardian Angels",
-  "name_pt": "Guardian Angels",
+  "name_es": "Ángeles guardianes",
+  "name_pt": "Anjos da Guarda",
   "feast_type_it": "memoria",
   "feast_type_en": "memorial",
   "feast_type_es": "memorial",
   "feast_type_pt": "memorial",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": " L'angelo custode è un angelo che, secondo la tradizione cristiana, accompagna ogni persona nella vita, aiutandola nelle difficoltà e guidandola verso Dio.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Angelo_custode",
+  "bio_es": "Un ángel de la guarda o ángel custodio es, según la creencia de varias religiones, un tipo de ángel asignado para proteger, guardar y guiar a una persona, grupo o nación en particular durante su existencia en la tierra. La creencia en seres tutelares se puede rastrear a lo largo de toda la Antigüedad. La idea de ángeles que protegieran a las personas jugó un papel importante en el judaísmo antiguo. En el cristianismo, la jerarquía de los ángeles fue ampliamente desarrollada en el siglo V por Pseudo Dionisio Areopagita. La teología de los ángeles y los espíritus tutelares ha sufrido muchos cambios desde el siglo V. La creencia es que los ángeles guardianes sirven para proteger a cualquier persona a la que Dios los asigne.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/%C3%81ngel_de_la_guarda",
+  "bio_pt": "Anjos da guarda são os anjos quem deve proteger cada um dos fiéis em algumas religiões abraâmicas.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Anjo_da_guarda"
 }

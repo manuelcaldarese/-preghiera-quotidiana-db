@@ -1,19 +1,19 @@
 {
   "date": "2026-08-24",
-  "name_it": "Saint Bartholomew the Apostle",
+  "name_it": "San Bartolomeo Apostolo",
   "name_en": "Saint Bartholomew the Apostle",
-  "name_es": "Saint Bartholomew the Apostle",
-  "name_pt": "Saint Bartholomew the Apostle",
+  "name_es": "San Bartolomé Apóstol",
+  "name_pt": "São Bartolomeu Apóstolo",
   "feast_type_it": "festa",
   "feast_type_en": "feast",
   "feast_type_es": "feast",
   "feast_type_pt": "feast",
   "bio_en": "",
   "wikipedia_url_en": "",
-  "bio_it": "",
-  "wikipedia_url_it": "",
-  "bio_es": "",
-  "wikipedia_url_es": "",
-  "bio_pt": "",
-  "wikipedia_url_pt": ""
+  "bio_it": "Bartolomeo è stato uno dei dodici apostoli che seguirono Gesù.",
+  "wikipedia_url_it": "https://it.wikipedia.org/wiki/Bartolomeo_(apostolo)",
+  "bio_es": "Bartolomé fue uno de los apóstoles de Jesús. Su nombre procede del patronímico arameo bar-Tôlmay, \"hijo de Tôlmay\" o \"hijo de Ptolomeo\". Es mencionado en los tres evangelios sinópticos, siempre en compañía de Felipe. En el Evangelio de Juan, donde no aparece con el nombre de Bartolomé, se le ha identificado con Natanael, que también está relacionado siempre con Felipe. Louis Réau considera que dado que su nombre procede de la unión de bar (hijo) y Ptolomeo, sería, por tanto, descendiente de la Dinastía Ptolemaica, aunque esto no tiene ninguna base en el Nuevo Testamento; en todo caso, hay que tener en cuenta que no era extraño para los galileos del siglo I tomar nombres griegos, o bien asimilarlos a ellos.",
+  "wikipedia_url_es": "https://es.wikipedia.org/wiki/Bartolom%C3%A9_el_Ap%C3%B3stol",
+  "bio_pt": "Bartolomeu, também chamado de Natanael foi um dos doze apóstolos de Jesus Cristo, segundo o Novo Testamento e, mais especificamente, os quatro Evangelhos.",
+  "wikipedia_url_pt": "https://pt.wikipedia.org/wiki/Bartolomeu%2C_o_Ap%C3%B3stolo"
 }
